@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>乐橙-登录</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./iconfont2/iconfont.css" />
+    <link rel="stylesheet" href="./iconfont3/iconfont.css" />
+    <link rel="stylesheet" href="./base.css" />
+    <style>
+      .main {
+        width: 1349px;
+        height: 900px;
+        background: url(./images/shop_pc.093f0a6.png) no-repeat 50%, linear-gradient(135deg, #ffb13d, #f6be4e);
+      }
+      .logo {
+        height: 165px;
+        font-size: 45px;
+        color: #fff;
+      }
+      img {
+        width: 39%;
+        float: right;
+        padding: 52.5px 150px;
+      }
+      .content-box {
+        height: calc(100% - 165px);
+        padding-bottom: 40px;
+        padding-right: 150px;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-end;
+        justify-content: center;
+      }
+      .content {
+        position: relative;
+        box-shadow: 0 0 4px 0 #fff;
+        width: 500px;
+        min-height: 500px;
+        padding: 40px 0;
+        background-color: #fff;
+        border-radius: 20px;
+        float: right;
+      }
+      .content-box .content .page {
+        width: 360px;
+        margin: 0 auto;
+        height: 30px;
+        /* background-color: pink;   */
+        color: black;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-weight: 700;
+      }
+      .tip-top {
+        margin: 20px 0;
+        font-size: 14px;
+        font-weight: normal;
+      }
+      .tip-top .link-like {
+        color: #f18d00;
+        cursor: pointer;
+        font-weight: normal;
+      }
+      .tel {
+        position: relative;
+      }
+      .tel .icon-shouji {
+        position: absolute;
+        left: 14px;
+        top: 1px;
+        font-size: 16px;
+        line-height: 40px;
+        color: #444;
+      }
+      .tel input {
+        /* -webkit-appearance: none; */
+        background-color: #fff;
+        background-image: none;
+        border-radius: 5px;
+        border: 1px solid #e5e5e5;
+        box-sizing: border-box;
+        color: #444;
+        display: inline-block;
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+        outline: 0;
+        padding: 0 40px;
+        transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+        width: 100%;
+      }
+      .pwd {
+        position: relative;
+      }
+      .pwd .icon-mima {
+        position: absolute;
+        left: 14px;
+        top: 31px;
+        font-size: 16px;
+        line-height: 40px;
+        color: #444;
+      }
+      .pwd input {
+        /* -webkit-appearance: none; */
+        background-color: #fff;
+        background-image: none;
+        border-radius: 5px;
+        border: 1px solid #e5e5e5;
+        box-sizing: border-box;
+        color: #444;
+        display: inline-block;
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+        outline: 0;
+        padding: 0 40px;
+        transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+        width: 100%;
+      }
+      .msg {
+        display: block;
+        width: 100%;
+        height: 30px;
+        font-size: 12px;
+        float: left;
+        color: red;
+        text-align: left;
+        padding-left: 5px;
+      }
+      /* 滑动验证 */
+      .box {
+        position: relative;
+        width: 100%;
+        height: 40px;
+        background-color: #e8e8e8;
+        border-radius: 4px;
+        /* left: 20px; */
+        margin-top: 30px;
+      }
+      .box .text {
+        font-size: 14px;
+      }
+      .btn {
+        position: absolute;
+        top: 0;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 4px;
+        z-index: 3;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        color: black;
+      }
+      .text {
+        position: absolute;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        line-height: 40px;
+        display: block;
+        z-index: 2;
+        /* -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em; */
+      }
+      .bg {
+        position: absolute;
+        height: 100%;
+        background-color: yellowgreen;
+        z-index: 1;
+      }
+      /* button登录按钮 */
+      .submit {
+        margin-top: 20px;
+        width: 100%;
+        border: none;
+        height: 44px;
+        line-height: 44px;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      .tip-bottom .link-like {
+        margin-top: 20px;
+        color: #f18d00;
+        cursor: pointer;
+        font-weight: normal;
+        font-size: 14px;
+      }
+      /* 闭眼睁眼 */
+      .content .close {
+        position: absolute;
+        top: 41px;
+        right: 15px;
+        width: 20px;
+        height: 20px;
+        /* background-color: red; */
+        background-image: url(./images/2.jpg);
+        background-size: contain;
+      }
+      .content .open {
+        width: 20px;
+        height: 20px;
+        background-image: url(./images/1.png);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <!-- logo部分 -->
+      <div class="logo">
+        <img src="./images/logo.9ce140c.png" alt="" />
+      </div>
+      <div class="content-box">
+        <div class="content">
+          <div class="logo page">
+            <div class="title mt20">登录乐橙账号</div>
+            <div class="tip-top">
+              <span>还没有账户？</span>
+              <span class="link-like" id="create">创建账户</span>
+            </div>
+            <!-- 表单 -->
+            <form action="" class="lc-form">
+              <!-- 1.手机号 -->
+              <div class="tel">
+                <i class="iconfont icon-shouji"></i>
+                <input type="text" name="num" placeholder="请输入手机号码或邮箱" />
+                <span class="msg"></span>
+              </div>
+              <!-- 2.密码 -->
+              <div class="pwd">
+                <i class="iconfont icon-mima"></i>
+                <input type="password" name="password" placeholder="请输入密码" />
+                <span class="msg"></span>
+                <i class="close eye_1"></i>
+              </div>
+              <!-- <a href="../register/logon.html"></a> -->
+              <!-- 验证 -->
+              <div class="box">
+                <!-- 滑块 -->
+                <a href="javascript:;"><div class="btn">>></div></a>
+                <!-- 文字 -->
+                <p class="text">拖动滑块验证</p>
+                <!-- 背景 -->
+
+                <div class="bg"></div>
+              </div>
+              <button class="submit">登录</button>
+            </form>
+
+            <div class="tip-bottom">
+              <span class="link-like">忘记密码？</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      //滑动验证
+      var btn = document.querySelector('.btn');
+      var box = document.querySelector('.box');
+      var bg = document.querySelector('.bg');
+      var text = document.querySelector('.text');
+      var flag = false;
+      btn.onmousedown = function (e) {
+        var downX = e.clientX;
+        btn.onmousemove = function (e) {
+          var moveX = e.clientX - downX;
+          if (moveX > -2) {
+            this.style.left = moveX + 'px';
+            bg.style.width = moveX + 'px';
+            if (moveX >= box.offsetWidth - btn.offsetWidth) {
+              flag = true;
+              text.innerHTML = '验证成功,请登录';
+              text.style.color = 'white';
+              btn.onmousedown = null;
+              btn.onmousemove = null;
+            }
+          }
+        };
+      };
+      btn.onmouseup = function () {
+        btn.onmousemove = null;
+        if (flag) return;
+        this.style.left = 0;
+        bg.style.width = 0;
+      };
+
+      //获取数据
+      const phone = document.querySelector('[name=num]');
+      const msg = document.querySelector('.tel .msg');
+      const submit = document.querySelector('.submit');
+      const eye_1 = document.querySelector('.eye_1');
+      const eye_2 = document.querySelector('.eye_2');
+      const forget = document.querySelector('.tip-bottom');
+      const create = document.querySelector('#create');
+
+      phone.addEventListener('change', verifyName);
+      function verifyName() {
+        //数据校验
+        //1.1设置规则
+        const reg = /^[a-zA-Z0-9-_]{11}$/;
+        //1.2校验
+        if (reg.test(phone.value)) {
+          phone.nextElementSibling.innerHTML = '';
+          return true;
+        } else {
+          phone.nextElementSibling.innerHTML = '格式错误，请输入11位数字';
+          return false;
+        }
+      }
+      phone.addEventListener('focus', function () {
+        phone.style.border = '1px solid #f18d00';
+      });
+      phone.addEventListener('blur', function () {
+        phone.style.border = '';
+      });
+      //【2】设置密码
+      const pwd = document.querySelector('[name=password]');
+      pwd.addEventListener('change', verifyPwd);
+      function verifyPwd() {
+        console.log(111);
+        //定义规则
+        const reg = /^[a-zA-Z0-9_-]{6,20}$/;
+        //进行校验
+        if (reg.test(pwd.value)) {
+          //通过
+          pwd.nextElementSibling.innerHTML = '';
+          return true;
+        } else {
+          pwd.nextElementSibling.innerHTML = '格式错误，请输入6-20位小写字母和数字';
+          return false;
+        }
+      }
+      pwd.addEventListener('focus', function () {
+        pwd.style.border = '1px solid #f18d00';
+      });
+      pwd.addEventListener('blur', function () {
+        pwd.style.border = '';
+      });
+      //获取表单，阻止默认行为
+      const form = document.querySelector('.lc-form');
+      // const btn = document.querySelector('.submit');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (!verifyName() || !verifyPwd()) {
+          alert('请输入手机号和密码');
+          pwd.nextElementSibling.innerHTML = '格式错误，请输入6-20位小写字母和数字';
+          return false;
+        }
+        //数据存储
+        localStorage.setItem('uname', phone.value);
+        location.href = '../index.html';
+      });
+      //跳转
+      forget.addEventListener('click', function () {
+        location.href = './forget.html';
+      });
+      create.addEventListener('click', function () {
+        console.log(create);
+        location.href = '../register/register.html';
+      });
+
+      //睁眼闭眼
+      let flag1 = true;
+      eye_1.addEventListener('click', function () {
+        eye_1.classList.toggle('open');
+        pwd.type = flag1 ? 'text' : 'password';
+        flag1 = !flag1;
+      });
+
+      let flag2 = true;
+      eye_2.addEventListener('click', function () {
+        eye_2.classList.toggle('open');
+        password.type = flag2 ? 'text' : 'password';
+        flag2 = !flag2;
+      });
+
+      const login = document.querySelector('.submit');
+      login.addEventListener('click', function () {
+        location.href = '../index.html';
+      });
+    </script>
+  </body>
+</html>

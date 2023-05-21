@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>乐橙商城-购物车</title>
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bese.css" />
+    <link rel="stylesheet" href="./css/conmon.css" />
+    <link rel="stylesheet" href="./css/LCgouwuche.css" />
+    <script src="./jquery.min.js"></script>
+    <script src="./js/car.js"></script>
+</head>
+<body>
+   <!-- 顶部通栏 -->
+    <div class="nav">
+        <div class="wrap">
+            <div class="nav_content">
+                <div class="left">
+                    <a href="javascript:;">乐橙官网</a> |
+                    <a href="javascript:;">开放平台</a>
+                </div>
+                <div class="right">
+                    <ul class="right_list">
+                        <li><a href="javascript:;" class="HI">你好,Edsdr</a></li>
+                        <li>
+                            <a href="javascript:;" class="center" >个人中心</a>
+                            <i class="iconfont icon-xiangxiajiantou"></i>
+                            <ul class="xinxi">
+                                <li>我的收藏</li>
+                                <li>我的优惠券<span>0</span></li>
+                                <li>退出登录</li>
+                            </ul>
+                        
+                        </li>|
+                        <li><a href="javascript:;" class="myorders">我的订单</a></li>|
+                        <li>
+                            <i class="iconfont icon-wangluo"></i>
+                            <a href="javascript:;" class="language">语言选择</a>
+                            <ul class="yuyan">
+                                <li>English</li>
+                                <li>Español - Spain</li>
+                                <li>Español - Latin America</li>
+                                <li>Italiano</li>
+                                <li>Deutsch</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="wrap">
+            <div class="header_content">
+                <div class="logo">
+                    <img src="./img/捕获.PNG" alt="" class="logos">
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="请输入您想搜索的商品">
+                    <button>搜索</button>
+                    <ul>
+                        <li>热门搜索</li>
+                        <li>摄像机</li>
+                        <li>育儿机器人</li>
+                        <li>云台摄像机</li>
+                        <li>指纹锁</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- 我的购物车 -->
+      <div class="car">
+      <div class="mycar">
+        <h3>我的购物车<i class="buynum">1</i></h3>
+        <div class="car-goods">
+          <!-- 商品信息列表 -->
+          <dl class="hd">
+            <dt>
+              <span class="info">商品信息</span>
+              <span class="price">单价</span>
+              <span class="number">数量</span>
+              <span class="amount">小计</span>
+              <span class="action">操作</span>
+            </dt>
+          </dl>
+          <!-- 我的购物车内容 -->
+          <dl class="xuanran">
+            <!-- <dd>
+              <span class="click-wrapper"><i class="click"></i></span>
+              <span class="pic"><img src="./img/TA3R-500万像素极清全景一键呼叫智能云台摄像机.jpg"></span>
+              <span class="info">
+                <strong class="title1">TS2F-400万日夜全彩夜视超清可旋转防水摄像机</strong>
+                <span class="message">日夜全彩、3.6mm、+128G卡、官方标配、500万像素（TS6-5M）</span>
+              </span>
+              <span class="price money1">￥428 <em>限时价</em></span>
+              <span class="number">
+                <div class="jisuan">
+                <span class="input-jian">-</span>
+                <span class="input-jia">+</span>
+                <div class="num1">1</div>
+                </div>
+              </span>
+              <span class="amount money2">￥2140</span>
+              <span class="action">删除</span>
+            </dd> -->
+          </dl>
+        </div>
+        <div class="settlement">
+          <span class="settlement-left"><i></i>全选</span>
+          <span class="settlement-right">
+            <span class="neirong">
+              <span class="heji">合计
+                <strong class="jiage">￥0</strong>
+              </span>
+            </span>
+            <span class="jiesuan">结算</span>
+          </span>
+        </div>
+        </div>
+      </div>
+     <!-- 更多好物 -->
+      <div class="more-father">
+        <div class="more-nice">
+          <h3>更多好物</h3>
+          <div class="goods-list">
+            <ul class="goods">
+              <li>
+                <div class="goods-item">
+                  <div class="img-warp"><img src="./img/1.jpg.jpg" alt=""></div>
+                  <p class="tags"><span>365天只换不修</span></p>
+                  <p class="name">TP7S-4M超清400万全景室内家用云台摄像机</p>
+                  <p class="desc">400万高清 闪光告警</p>
+                  <p class="price">限时价￥249起</p>
+                </div>
+              </li>
+              <li>
+                <div class="goods-item">
+                  <div class="img-warp"><img src="./img/2.jpg.jpg" alt=""></div>
+                  <p class="tags"><span>爆款 室外 防水 日夜 全彩</span></p>
+                  <p class="name">TS2F-400万日夜全彩夜视超清可旋转防水摄像机</p>
+                  <p class="desc">360°全景 | 400万超清像素 | 全彩夜视 | 防水防尘 | 双向语音 | 声光警戒 | 手机操控可旋转</p>
+                  <p class="price">限时价￥279起</p>
+                </div>
+              </li>
+              <li>
+                <div class="goods-item">
+                  <div class="img-warp"><img src="./img/3.jpg.jpg" alt=""></div>
+                  <p class="tags"><span>可视</span></p>
+                  <p class="name">【会员再减100】P130-三维感官视频联网指纹智能锁</p>
+                  <p class="desc">远程高清视频通话 | 终身免费8秒云存储 | 7种开锁方式 | app一站式管理</p>
+                  <p class="price">限时价￥1249起</p>
+                </div>
+              </li>
+              <li>
+                <div class="goods-item">
+                  <div class="img-warp"><img src="./img/4.jpg.jpg" alt=""></div>
+                  <p class="tags"><span>爆款 室内 促销</span></p>
+                  <p class="name">【周二买1送1】TA3-400万像素超清全景室内智能摄像机</p>
+                  <p class="desc">微光全彩 | AI人形检测 | 智能追踪 | 全景查看 | 主动防御报警 | 隐私遮蔽 | 异常音提醒</p>
+                  <p class="price">限时价￥179起</p>
+                </div>
+              </li>
+              <li>
+                <div class="goods-item">
+                  <div class="img-warp"><img src="./img/5.jpg.jpg" alt=""></div>
+                  <p class="tags"><span>365天只换不修</span></p>
+                  <p class="name">TF2C-400万防水夜视室外家用商用摄像机</p>
+                  <p class="desc">400万像素 | IP67防水防尘 | 30米红外夜视</p>
+                  <p class="price">限时价￥219起</p>
+                </div>
+              </li>
+              <li>
+                <div class="goods-item">
+                  <div class="img-warp"><img src="./img/6.jpg.jpg" alt=""></div>
+                  <p class="tags"><span>365天只换不修</span></p>
+                  <p class="name">TA2-400万超清全景AI人形检测云台摄像机</p>
+                  <p class="desc">微光全彩 | AI人形检测 | 隐私遮蔽 | 全景查看 | 主动防御报警 | 智能追踪 | 异常音提醒</p>
+                  <p class="price">限时价￥229起</p>
+                </div>
+              </li>
+              <li>
+                <div class="goods-item">
+                  <div class="img-warp"><img src="./img/7.jpg.jpg" alt=""></div>
+                  <p class="tags"><span>365天只换不修 买贵退差</span></p>
+                  <p class="name">TP7S-4M超清400万搭配云存储年卡，全景云台摄像机</p>
+                  <p class="desc">·云存储7天年卡原价110元，套餐里仅需60元； ·30天年卡原价260元，套餐里仅需143元； 400万超清像素 | 360°全景 | 微光全彩</p>
+                  <p class="price">限时价￥329起</p>
+                </div>
+              </li>
+              <li>
+                <div class="goods-item">
+                  <div class="img-warp"><img src="./img/8.jpg.jpg" alt=""></div>
+                  <p class="tags"><span>室内 买贵退差</span></p>
+                  <p class="name">TA3-400万像素超清搭配云存储年卡，全景室内摄像机</p>
+                  <p class="desc">·云存储7天年卡原价110元，套餐里仅需60元； ·30天年卡原价260元，套餐里仅需143元； 微光全彩 | AI人形检测 | 智能追踪 | 全景查看 | 主动防御报警 | 隐私遮蔽</p>
+                  <p class="price">限时价￥249起</p>
+                </div>
+              </li>
+              <li>
+                <div class="goods-item">
+                  <div class="img-warp"><img src="./img/9.jpg.jpg" alt=""></div>
+                  <p class="tags"><span>365天只换不修</span></p>
+                  <p class="name">A2X-智能人形检测高性价比云台室内摄像机</p>
+                  <p class="desc">200万像素高清 | 微光全彩 | AI人形检测 | 智能追踪</p>
+                  <p class="price">限时价￥139起</p>
+                </div>
+              </li>
+              <li>
+                <div class="goods-item">
+                  <div class="img-warp"><img src="./img/10.jpg.jpg" alt=""></div>
+                  <p class="tags"><span>防水 365天只换不修</span></p>
+                  <p class="name">K3X-高清室外防水家用商用枪机摄像机</p>
+                  <p class="desc">AI人形检测 | 高清红外夜视 | IP67防水</p>
+                  <p class="price">限时价￥179起</p>
+                </div>
+              </li>
+              <li>
+                <div class="goods-item">
+                  <div class="img-warp"><img src="./img/11.jpg.jpg" alt=""></div>
+                  <p class="tags"><span>365天只换不修</span></p>
+                  <p class="name">TP7i-星光版AI全景智能传感家用室内摄像机</p>
+                  <p class="desc">星光级夜视 | 内置网关 | 告警控制接入 | 双向语音对讲 | 异常音检测</p>
+                  <p class="price">限时价￥519起</p>
+                </div>
+              </li>
+              <li>
+                <div class="goods-item">
+                  <div class="img-warp"><img src="./img/12.jpg.jpg" alt=""></div>
+                  <p class="tags"><span>365天只换不修</span></p>
+                  <p class="name">A33E超清全景摄像机</p>
+                  <p class="desc">400万像素 | 微光全彩 | AI人形检测 | 隐私遮蔽 | 全景查看 | 主动防御报警 | 智能追踪 | 异常音提醒</p>
+                  <p class="price">限时价￥359起</p>
+                </div>
+              </li>
+            </ul>
+            <div class="loading-mak">
+  
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  
+    <!-- 尾部 -->
+    <div class="footer">
+        <div class="wrap">
+            <div class="foot_main">
+                <div class="top">
+                    <img src="./img/footer.bd40d9d.png" alt="7天退货保障、15天换货承诺、全场包邮、千余家售后服务点">
+                </div>
+                <div class="bottom">
+                    <div class="left">
+                        <dl>
+                            <dt>新手上路</dt>
+                            <dd>商品退货保障</dd>
+                            <dd>订单的几种状态</dd>
+                            <dd>顾客必读</dd>
+                        </dl>
+                        <dl>
+                            <dt>购物指南</dt>
+                            <dd>简单的购物流程</dd>
+                            <dd>网站免责声明</dd>
+                            <dd>体贴的售后服务</dd>
+                            <dd>非会员购物通道</dd>
+                            <dd>会员等级折扣</dd>
+                        </dl>
+                        <dl>
+                            <dt>支付/配送方式</dt>
+                            <dd>关于送货和验货</dd>
+                            <dd>网上支付小贴士</dd>
+                            <dd>订单何时出库</dd>
+                            <dd>配送方式</dd>
+                            <dd>支付方式</dd>
+                        </dl>
+                        <dl>
+                            <dt>服务条款</dt>
+                            <dd>隐私保护政策</dd>
+                            <dd>历史协议版本</dd>
+                            <dd>乐橙服务协议</dd>
+                            <dd>网站使用条款</dd>
+                            <dd>开源软件条款</dd>
+                        </dl>
+                        <dl>
+                            <dt>公司简介</dt>
+                            <dd>证照信息</dd>
+                            <dd>乐橙简介</dd>
+                            <dd>关于我们</dd>
+                            <dd>联系我们</dd>
+                        </dl>
+                    </div>
+                    <div class="right">
+                        <img src="./img/ft-bg2.93a4491.png" alt="">
+                        <p>400-672-8169<span>繁忙</span></p>
+                        <p>（工作日:08:30-20:00，节假日:09:30-20:00）</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_icp">
+        <div class="wrap">
+            <p>杭州华橙网络科技有限公司浙ICP备16023676号</p>
+            <p><img src="./img/net_police.0c57706.png" alt="">浙公网安备33010802009519号</p>
+            <p>增值电信业务经营许可证: 浙B2-20170129</p>
+            <p>Copyright © 2014 - 2023 IMOU. All Rights Reserved.</p>
+        </div>
+    </div>
+    
+    <script>
+        // 热门搜索
+        const hot = document.querySelector('.header_content .search input')
+        hot.addEventListener('focus',function(){
+            document.querySelector('.header_content .search ul').style.display='block'
+        })
+
+        hot.addEventListener('blur',function(){
+            document.querySelector('.header_content .search ul').style.display='none'
+        })
+
+        //  个人中心
+        const center = document.querySelector('.nav_content .center')
+        // console.log(center);
+        center.addEventListener('mouseover',function(){
+            document.querySelector('.nav_content .xinxi').style.display='block'
+        })
+
+        center.addEventListener('mouseout',function(){
+            document.querySelector('.nav_content .xinxi').style.display='none'
+        })
+
+           //  语言选择
+           const language = document.querySelector('.nav_content .language')
+        // console.log(center);
+        language.addEventListener('mouseover',function(){
+            document.querySelector('.nav_content .yuyan').style.display='block'
+        })
+
+        language.addEventListener('mouseout',function(){
+            document.querySelector('.nav_content .yuyan').style.display='none'
+        })
+
+        const money1=document.querySelector('.money1')
+        const amount=document.querySelector('.money2')
+        const message=document.querySelector('.message')
+        const title=document.querySelector('.title1')
+        const pic=document.querySelector('.pic')
+        const hi=document.querySelector('.HI')
+        const logo=document.querySelector('.logos')
+        logo.addEventListener('click',function(){
+          location.href='../index.html'
+        })
+        // console.log(hi);
+        // console.log(money1);
+
+
+        //获取数据
+        let arr=JSON.parse(localStorage.getItem('userName'))
+        const data=localStorage.getItem('uname')
+        const xr=document.querySelector('.xuanran')
+        // console.log(arr);
+        //渲染数据
+        // money1.innerHTML= `<span class="price money1">￥${arr.price} <em>限时价</em></span>`
+        // amount.innerHTML=`<span class="amount money2">￥${arr.price}</span>`
+        // message.innerHTML=`<span class="message">日夜全彩、3.6mm、${arr.canshu}、官方标配、500万像素（TS6-5M）</span>`
+        // title.innerHTML=`<strong class="title">${arr.title}</strong>`
+        hi.innerHTML=`<li><a href="javascript:;" class="HI">${data}</a></li>`
+        render()
+        function render(){
+          const newArr=arr.map(function(item,index){
+            return `
+            <dd class="remove">
+              <span class="click-wrapper"><span class="click"></span></span>
+              <span class="pic"><img src="./img/TA3R-500万像素极清全景一键呼叫智能云台摄像机.jpg"></span>
+              <span class="info">
+                <strong class="title">${item.title}</strong>
+                <span class="message">日夜全彩、3.6mm、${item.canshu}、官方标配、500万像素（TS6-5M）</span>
+              </span>
+              <span class="price money1"> <em>限时价</em> ￥${item.price}</span>
+              <span class="number">
+                <div class="jisuan">
+                <span class="input-jian">-</span>
+                <span class="input-jia">+</span>
+                <input type='text' class='num1' value='1'>
+                </div>
+              </span>
+              <span class="amount money2">￥${item.price}.00</span>
+              <i class="action" data-index=${index}>删除</i>
+            </dd>
+            `
+          })
+          xr.innerHTML=newArr.join('')
+          $('.buynum').html(arr.length)
+        }
+        render()
+
+        // //删除
+        // xr.addEventListener('click',function(e){
+        //   if(e.target.tagName==='I'){
+        //     arr.splice(e.target.dataset.index, 1);
+        //     render();
+        //     //重新本地存储
+        //     localStorage.setItem('userName', JSON.stringify(arr));
+        //     // gettotal()
+        //   }
+        // })
+
+
+
+
+
+
+
+        // const left=document.querySelector('.input-jian')
+        // const mid=document.querySelector('.num1')
+        // const right=document.querySelector('.input-jia')
+        // const buy=document.querySelector('.buynum')
+
+        // let count=1
+        // right.addEventListener('click',function(){
+        //   count++
+        //   mid.innerHTML=count
+        //   buy.innerText=count
+        // })
+
+        // +
+        $('.jisuan .input-jia').click(function(){
+          let count=$(this).siblings('.num1').val()
+            count++
+           $(this).siblings('.num1').val(count)
+           const price = $(this).parents('.number').siblings('.price').html().substring(15)
+           $(this).parents('.number').siblings('.amount').html('￥'+ (price*count).toFixed(2))
+           gettotal()
+        })
+
+        // -
+        $('.jisuan .input-jian').click(function(){
+          let count=$(this).siblings('.num1').val()
+            count--
+            if(count<1){
+              return false
+            }
+           $(this).siblings('.num1').val(count)
+           const price = $(this).parents('.number').siblings('.price').html().substring(15)
+           $(this).parents('.number').siblings('.amount').html('￥'+ (price*count).toFixed(2))
+           gettotal()
+        })
+
+        $('input').change(function(){
+          console.log(123);
+          const count = +$(this).val()  
+          const price = $(this).parents('.number').siblings('.price').html().substring(15)
+          const totalPrice = count * price
+          $(this).parents('.number').siblings('.amount').html('￥'+ totalPrice.toFixed(2))
+          gettotal()
+        })
+        // const price = $('.num1').parents('.number').siblings('.price').html().substring(15)
+        // console.log(price);
+
+        // left.addEventListener('click',function(){
+        //   count--
+        //   if(count===0){
+        //     count=1
+        //   }
+        //   mid.innerHTML=count
+        //   buy.innerText=count
+        // })
+
+        // 圆点
+        // 小
+        $('.click-wrapper .click').click(function(){
+          $(this).toggleClass('active')
+          if($('.click').length===$('.active').length) {
+            $('.settlement-left i').addClass('current')
+          } else {
+            $('.settlement-left i').removeClass('current')
+          }
+          gettotal()
+        })
+
+        // 全选
+        $('.settlement-left i').click(function(){
+          $(this).toggleClass('current')
+          if ($(this).hasClass('current')) {
+            $(this).parents('.settlement').siblings('.car-goods').find('.click').addClass('active')
+          } else {
+            $(this).parents('.settlement').siblings('.car-goods').find('.click').removeClass('active')
+          }
+          gettotal()
+        })
+
+        // 总价
+        gettotal()
+
+       function gettotal(){
+        let totalPrice = 0
+
+      // const nb=  arr.reduce((a,b)=>{
+      //     return a + +b.price *b.number
+      //   },0)
+      //   console.log(nb);
+          $('.amount.money2').each(function(i,domEle){
+           console.log($(this).parents('.xuanran')); 
+              if($(this).parents('dd').find('.click').hasClass('active')) {
+                 totalPrice += +$(this).html().substring(1)
+                 console.log(totalPrice);
+              }
+            })
+          $('.settlement-right .jiage').html('￥'+totalPrice.toFixed(2))
+       }
+      //  console.log(arr);
+        //删除
+        xr.addEventListener('click',function(e){
+          if(e.target.tagName==='I'){
+            arr.splice(e.target.dataset.index, 1);
+            render();
+            //重新本地存储
+            localStorage.setItem('userName', JSON.stringify(arr));
+            gettotal()
+          }
+        })
+        // $('.action').click(function(){
+        //   $(this).parents('.remove').remove()
+        //   localStorage.setItem('userName', JSON.stringify(arr))
+        //   gettotal()
+        // })
+       const order=document.querySelector('.myorders')
+       order.addEventListener('click',function(){
+        location.href='../orders/order/personal .html'
+       })
+    </script>
+</body>
+</html>

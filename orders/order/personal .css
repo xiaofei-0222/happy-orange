@@ -1,0 +1,564 @@
+body{
+    background-color: #f2f5f8;
+}
+/* 顶部 */
+.top{
+    height: 37px;
+    background-color: #333;
+    color: #ccc;
+}
+.top .box{
+    display: flex;
+    line-height: 37px;
+    font-size: 12px;
+}
+ .box .left{
+    flex: 1;
+}
+.box .left span{
+    margin: 0 5px;
+}
+.rigth{
+    width: 310px;
+}
+.rigth a{
+    color: #ccc;
+}
+.rigth span{
+    margin-right: 5px;
+}
+.rigth .icon-xialajiantouxiao{
+    font-size: 12px;
+}
+.rigth .ou{
+    margin: 0 5px;
+}
+.rigth .none{
+    position: absolute;
+    top: 45px;
+    right: 210px;
+    width: 100px;
+    height: 100px;
+    /* display: none; */
+    font-size: 14px;
+    color: #606266;
+    background-color: #fff;
+    text-align: center;
+}
+ .active{
+    color: #ee676d;
+    background-color: #fceced;
+}
+/* logo图片 */
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    height: 120px;
+    background-color: #fff;
+}
+.logo .search{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+.logo .ipt{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    width: 680px;
+    height: 36px;
+    line-height: 0;
+    border: 1px solid #ea4148;
+}
+/* 搜索框 */
+.ipt{
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.ipt .btn button{
+    width: 80px;
+    height: 34px;
+    border: 0;
+    color: #fff;
+    background-color: #ea4148;
+}
+/* 购物车 */
+.carts{
+    margin-top: 10px;
+}
+.carts button{
+    width: 120px;
+    height: 36px;
+    background-color: #fff;
+    border: 1px solid #dcdfe6;
+    color: #606266;
+    border-radius: 2px;
+}
+/* 导航 */
+.tab {
+    background-color: #fff;
+    
+  }
+  .tab .tab-nav {
+    position: relative;
+    display: flex;
+    height: 50px;
+  }
+
+  .tab .tab-nav .frist {
+    z-index: 3;
+    padding-top: 18px;
+    margin-right: 25px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .tab .tab-nav .second {
+    padding-top: 18px;
+    margin-right: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+  }
+  .tab .tab-nav ul {
+    display: flex;
+    padding-top: 15px;
+    height: 50px;
+  }
+  .tab .tab-nav ul li {
+    margin-right: 35px;
+    padding-bottom: 15px;
+  }
+  .tab .tab-nav ul li a {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+  }
+  .tab .tab-nav ul li a:hover {
+    color: #ea4148;
+  }
+  .tab .tab-nav span {
+    padding-top: 15px;
+    margin-right: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+  }
+  .tab .tab-nav .tab-content {
+    z-index: 2;
+    background-color: #fff;
+    transform: all 1s;
+  }
+  .tab .tab-nav .tab-content .item {
+    background-color: #fff;
+    position: absolute;
+    top: 37px;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s;
+    width: 100%;
+    height: 280px;
+  }
+  .tab .tab-nav .tab-content .item a {
+    display: inline-block;
+    width: 190px;
+    height: 250px;
+    margin-top: 30px;
+    margin-right: 6px;
+    text-align: center;
+  }
+  .tab .tab-nav .tab-content .item a p {
+    font-size: 14px;
+    color: #000;
+  }
+  .tab .tab-nav .tab-content .item a i {
+    font-size: 18px;
+    color: #ea4148;
+  }
+  .tab .tab-nav .tab-content .activeitem {
+    opacity: 1;
+  }
+/* 侧边栏 */
+.heart{
+    display: flex;
+}
+.navs{
+    position: relative;
+    top: 20px;
+    left: 120px;
+    z-index: 9;
+}
+.sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 200px;
+    height: 365px;
+    background-color: #fff;
+}
+.sidebar ul{
+    width: 100%;
+    height: 280px;
+}
+.sidebar ul li{
+    margin-top: 20px;
+    padding-left: 27px;
+    height: 30px;
+    line-height: 30px;
+}
+.sidebar ul .highlight{
+    margin-top: 0;
+    border-left: 2px solid #ea4148;
+    font-weight: 700;
+}
+.sidebar .highlight a{
+    color: #ea4148;
+}
+.sidebar ul li:nth-child(5){
+    height: 20px;
+    margin-top: 0;
+}
+/* 内容 */
+.content{
+    margin-left: 20px;
+    padding: 60px;
+    width: 988px;
+    height: 525px;
+    background-color: #fff;
+    display: block;
+}
+.content img{
+    width: 100px;
+    height: 100px;
+}
+.content .info{
+    position: relative;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+}
+.content .info .username{
+    position: absolute;
+    top: 20px;
+    left: 130px;
+    color: #333;
+}
+.content .info .account{
+    position: absolute;
+    top: 55px;
+    left: 130px;
+    color: #666;
+}
+/* 地址管理 */
+.address{
+  margin-left: 20px;
+  padding: 40px;
+  width: 988px;
+  height: 525px;
+  background-color: #fff;
+  display: none;
+}
+.address .left{
+  float: left;
+  height: 40px;
+}
+.address .left h1{
+  font-size: 20px;
+    color: #333;
+    font-weight: 400;
+}
+.address .left span{
+  color: #999;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.address .left .red{
+  padding-left: 0;
+  color:  #ea4148;
+}
+.address .addto{
+  float: right;
+  margin-right: 63px;
+  width: 136px;
+  height: 40px;
+  font-size: 14px;
+  color: #606266;
+  background: #fff;
+  border: 1px solid #dcdfe6;
+}
+.address .empty{
+  background: url(./image/user_img_address_default.88e297a.png) 50% no-repeat;
+  height: 465px;
+  font-size: 16px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 345px;
+  color: #999;
+}
+/* 订单 */
+.btn_box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 868px;
+    height: 225px;
+}
+/* 付款 */
+.btn_box .paid{
+    position: relative;
+    padding-left: 70px;
+    margin-top: 60px;
+    width: 434px;
+    height: 52px;
+}
+.btn_box .paid p span{
+    color: #ea4148;
+    margin-left: 5px;
+}
+.btn_box .paid p{
+    /* margin-top: 5px; */
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.btn_box .icon-daifukuandingdan{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 50px;
+    color: #ea4148;
+}
+
+/*待发货 */
+.btn_box .shipped{
+    position: relative;
+    padding-left: 70px;
+    margin-top: 60px;
+    width: 434px;
+    height: 52px;
+}
+.btn_box .shipped p span{
+    color: #ea4148;
+    margin-left: 5px;
+}
+.btn_box .shipped p{
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.btn_box .icon-daifahuodingdan1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 50px;
+    color: #ea4148;
+}
+
+/* 待收货 */
+.btn_box .received{
+    position: relative;
+    margin-top: 60px;
+    padding-left: 70px;
+    width: 434px;
+    height: 52px;
+}
+.btn_box .received p span{
+    color: #ea4148;
+    margin-left: 5px;
+}
+.btn_box .received p{
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.btn_box .icon-daishouhuo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 50px;
+    color: #ea4148;
+}
+
+/* 待评价 */
+.btn_box .evaluated{
+    position: relative;
+    margin-top: 60px;
+    padding-left: 70px;
+    width: 434px;
+    height: 52px;
+}
+.btn_box .evaluated p span{
+    color: #ea4148;
+    margin-left: 5px;
+}
+.btn_box .evaluated p{
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.btn_box .icon-pingjia{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 50px;
+    color: #ea4148;
+}
+
+/* 电梯导航 */
+.elevator ul{
+    width: 75px;
+    position: fixed;
+    right: 0;
+    bottom: 70px;
+    background-color: #fff;
+    text-align: center;
+    z-index: 10;
+}
+.elevator ul li {
+    padding-top: 13px;
+    width: 80px;
+    height: 80px;
+}
+.elevator ul li .iconfont{
+    font-size: 24px;
+    margin: 0 26px ;
+}
+.elevator li a{
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+.elevator .backtop{
+    display: none;
+}
+
+/* 推荐 */
+.referral{
+    margin-top: 150px;
+}
+.referral h3{
+  margin-bottom: 20px;
+}
+.goods-list ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.goods-list li{
+    width: 291px;
+    height: 415px;
+    background-color: #fff;
+}
+ .goods-list li h4{
+    margin-left: 10px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+ }
+ .goods-list li img {
+    width: 291px;
+    height: 291px;
+ }
+ .goods-list li .title{
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 8px;
+    width: 92px;
+    padding: 0 5px;
+    margin-right: 10px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #fff;
+    background: #f4a0a3;
+ }
+ .goods-list li .introduce{
+    margin-left: 10px;
+    font-size: 14px;
+    height: 14px;
+    margin-bottom: 12px;
+    color: #999;
+ }
+ .goods-list li .time{
+    margin-left: 10px;
+    font-size: 16px;
+    color: #ea4148;
+    margin-bottom: 0;
+ }
+ /* 底部 */
+ .foot {
+    margin-top: 50px;
+    background-color: #fff;
+  }
+  .foot .footer {
+    height: 332px;
+  }
+  .foot .footer .top {
+    width: 1200px;
+    height: 80px;
+  }
+  .foot .footer .top img {
+    background-color: #fff;
+  }
+  .foot .footer .bottom {
+    padding-top: 30px;
+    display: flex;
+  }
+  .foot .footer .bottom .left {
+    display: flex;
+  }
+  .foot .footer .bottom .left dl {
+    width: 175px;
+  }
+  .foot .footer .bottom .left dl dt {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+  .foot .footer .bottom .left dl dd {
+    font-size: 12px;
+    margin-bottom: 18px;
+    color: #666;
+    line-height: 1;
+  }
+  .foot .footer .bottom .right {
+    width: 290px;
+    height: 200px;
+    border-left: 1px solid #999;
+    text-align: center;
+  }
+  .foot .footer .bottom .right img {
+    width: 100px;
+    height: 115px;
+  }
+  .foot .footer .bottom .right p {
+    font-size: 22px;
+    color: #f18d00;
+  }
+  .foot .footer .bottom .right p em {
+    vertical-align: middle;
+    padding: 2px 5px;
+    font-size: 14px;
+    border: 1px solid #f18d00;
+    line-height: 1.2;
+    margin-top: 3px;
+  }
+  .foot .footer .bottom .right p span {
+    display: block;
+    font-size: 12px;
+    color: #999;
+  }
+  .down {
+    text-align: center;
+  }
+  .down p {
+    font-size: 12px;
+    color: #999;
+    padding: 10px 0;
+    line-height: 1.5;
+  }
+  .down p span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../乐橙/imges/浙公安网备.png);
+  }
+  

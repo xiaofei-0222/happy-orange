@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>乐橙-重置密码</title>
+    <link rel="stylesheet" href="./iconfont/iconfont.css" />
+    <link rel="stylesheet" href="./base.css" />
+    <link rel="stylesheet" href="./logo.css" />
+    <style>
+      .main {
+        width: 1349px;
+        height: 900px;
+        background: url(./images/shop_pc.093f0a6.png) no-repeat 50%, linear-gradient(135deg, #ffb13d, #f6be4e);
+      }
+      .logo {
+        height: 165px;
+        font-size: 45px;
+        color: #fff;
+      }
+      img {
+        float: right;
+        padding: 52.5px 150px;
+      }
+      .content-box {
+        height: calc(100% - 165px);
+        padding-bottom: 40px;
+        padding-right: 150px;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-end;
+        justify-content: center;
+      }
+      .content {
+        position: relative;
+        box-shadow: 0 0 4px 0 #fff;
+        width: 500px;
+        min-height: 600px;
+        padding: 40px 0;
+        background-color: #fff;
+        border-radius: 20px;
+        float: right;
+      }
+      .content-box .content .page {
+        width: 360px;
+        margin: 0 auto;
+        height: 30px;
+        /* background-color: pink;   */
+        color: black;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-weight: 700;
+      }
+      .tip-top {
+        margin: 20px 0;
+        font-size: 14px;
+        font-weight: normal;
+      }
+      .tip-top .link-like {
+        color: #f18d00;
+        cursor: pointer;
+        font-weight: normal;
+      }
+      .tel {
+        position: relative;
+      }
+      .tel .icon-tishi {
+        position: absolute;
+        left: 10px;
+        top: 0;
+        line-height: 41px;
+        font-size: 14px;
+        color: #444;
+      }
+      .tel input {
+        /* -webkit-appearance: none; */
+        background-color: #fff;
+        background-image: none;
+        border-radius: 5px;
+        border: 1px solid #e5e5e5;
+        box-sizing: border-box;
+        color: #444;
+        display: inline-block;
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+        outline: 0;
+        padding: 0 40px;
+        transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+        width: 100%;
+      }
+      .pwd input {
+        /* -webkit-appearance: none; */
+        background-color: #fff;
+        background-image: none;
+        border-radius: 5px;
+        border: 1px solid #e5e5e5;
+        box-sizing: border-box;
+        color: #444;
+        display: inline-block;
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+        outline: 0;
+        padding: 0 40px;
+        transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+        width: 100%;
+      }
+      .msg {
+        display: block;
+        width: 100%;
+        height: 30px;
+        font-size: 12px;
+        float: left;
+        color: red;
+        text-align: left;
+        padding-left: 5px;
+      }
+      /* 滑动验证 */
+      .box {
+        position: relative;
+        width: 100%;
+        height: 40px;
+        background-color: #e8e8e8;
+        border-radius: 4px;
+        /* left: 20px; */
+        margin-top: 30px;
+        line-height: 40px;
+      }
+      .box .text {
+        font-size: 14px;
+      }
+      .btn {
+        position: absolute;
+        top: 0;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 4px;
+        z-index: 3;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        color: black;
+      }
+      .text {
+        position: absolute;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        line-height: 40px;
+        display: block;
+        z-index: 2;
+        /* -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em; */
+      }
+      .bg {
+        position: absolute;
+        height: 100%;
+        background-color: yellowgreen;
+        z-index: 1;
+      }
+      /* button登录按钮 */
+      .submit {
+        margin-top: 5px;
+        width: 100%;
+        border: none;
+        height: 44px;
+        line-height: 44px;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      .tip-bottom .link-like {
+        margin-top: 20px;
+        color: #f18d00;
+        cursor: pointer;
+        font-weight: normal;
+        font-size: 14px;
+      }
+      /* 获取验证码 */
+      .getpwd {
+        position: relative;
+        margin-top: 30px;
+        width: 360px;
+        border: 1px solid #eee;
+        border-radius: 5px;
+      }
+      .getpwd input {
+        width: 250px;
+        padding: 0 20px;
+        height: 44px;
+      }
+      .getpwd a {
+        font-size: 14px;
+      }
+      .getpwd .icon-anquan {
+        position: absolute;
+        left: 10px;
+        top: 0;
+        font-size: 14px;
+        line-height: 44px;
+        color: #444;
+      }
+      .getpwd .code {
+        color: #f18d00;
+        font-size: 12px;
+        font-weight: normal;
+      }
+      .pwd {
+        position: relative;
+      }
+      .pwd .icon-mima {
+        position: absolute;
+        left: 10px;
+        line-height: 44px;
+        color: #444;
+        font-size: 14px;
+      }
+      .msg1 {
+        display: block;
+        width: 100%;
+        height: 30px;
+        font-size: 12px;
+        float: left;
+        color: #aaa;
+        text-align: left;
+        padding-left: 5px;
+        font-weight: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <!-- logo部分 -->
+      <div class="logo">
+        <img src="./images/logo.9ce140c.png" alt="" />
+      </div>
+      <div class="content-box">
+        <div class="content">
+          <div class="logo page">
+            <div class="title mt20">忘记密码</div>
+            <div class="tip-top">
+              <span>已有账户？</span>
+              <span class="link-like">去登录</span>
+            </div>
+            <!-- 表单 -->
+            <form action="" class="form">
+              <!-- 1.手机号 -->
+              <div class="tel">
+                <i class="iconfont icon-tishi"></i>
+                <input type="text" name="num" placeholder="请输入手机号码或邮箱" />
+                <span class="msg"></span>
+              </div>
+              <!-- 验证 -->
+              <div class="box">
+                <!-- 滑块 -->
+                <a href="javascript:;"><div class="btn">>></div></a>
+                <!-- 文字 -->
+                <p class="text">拖动滑块验证</p>
+                <!-- 背景 -->
+                <div class="bg"></div>
+              </div>
+              <!-- 获取验证码 -->
+              <div class="getpwd">
+                <i class="iconfont icon-anquan"></i>
+                <input name="code" type="text" placeholder="请输入验证码" />
+                <span class="msg"></span>
+                <a class="code" href="javascript:;">获取验证码</a>
+              </div>
+              <!-- 2.密码 -->
+              <div class="pwd">
+                <i class="iconfont icon-mima"></i>
+                <input type="text" name="password" placeholder="请输入密码" />
+                <span class="msg1">8-32位数字、字母、符号两种以上组合（区分大小写）</span>
+              </div>
+              <!-- 二次密码 -->
+              <div class="pwd">
+                <i class="iconfont icon-mima"></i>
+                <input type="text" name="confrim" placeholder="请再次输入密码" />
+                <span class="msg1"></span>
+              </div>
+              <!-- 提交按钮 -->
+              <button class="submit">确定</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      //滑动验证
+      var btn = document.querySelector('.btn');
+      var box = document.querySelector('.box');
+      var bg = document.querySelector('.bg');
+      var text = document.querySelector('.text');
+      var flag = false;
+      btn.onmousedown = function (e) {
+        var downX = e.clientX;
+        btn.onmousemove = function (e) {
+          var moveX = e.clientX - downX;
+          if (moveX > -2) {
+            this.style.left = moveX + 'px';
+            bg.style.width = moveX + 'px';
+            if (moveX >= box.offsetWidth - btn.offsetWidth) {
+              flag = true;
+              text.innerHTML = '验证通过';
+              text.style.color = 'white';
+              btn.onmousedown = null;
+              btn.onmousemove = null;
+            }
+          }
+        };
+      };
+      btn.onmouseup = function () {
+        btn.onmousemove = null;
+        if (flag) return;
+        this.style.left = 0;
+        bg.style.width = 0;
+      };
+
+      //获取数据
+      const num = document.querySelector('[name=num]');
+      const msg = document.querySelector('.tel .msg');
+      const submit = document.querySelector('.submit');
+      num.addEventListener('change', verifyName);
+      function verifyName() {
+        //数据校验
+        //1.1设置规则
+        const reg = /^1(3\d|4[5-9]|5[0-35-9]|6[567]|7[0-8]|8\d|9[0-35-9])\d{8}$/;
+        //1.2校验
+        if (reg.test(num.value)) {
+          num.nextElementSibling.innerHTML = '';
+          return true;
+        } else {
+          num.nextElementSibling.innerHTML = '格式错误，请输入11位数字';
+          return false;
+        }
+      }
+      //获取验证码
+      const code = document.querySelector('.code');
+      let open = true; //开关
+      // 1. 发送短信5秒倒计时业务
+      // 1.1 注册点击事件
+      code.addEventListener('click', function () {
+        if (open) {
+          open = false; //上锁
+          let i = 5;
+          code.innerHTML = `0${i}s后重新获取`;
+          const timer = setInterval(function () {
+            i--;
+            code.innerHTML = `0${i}s后重新获取`;
+            if (i === 0) {
+              open = true; //解锁
+              code.innerHTML = '重新获取';
+              clearInterval(timer);
+            }
+          }, 1000);
+        }
+      });
+      //占位
+      //占位
+      //占位
+      //占位
+      //占位
+
+      //短信验证码
+      const code2 = document.querySelector('[name=code]');
+      code2.addEventListener('change', verifyCode);
+      function verifyCode() {
+        //定义规则
+        const reg = /^\d{6}$/;
+        //进行校验
+        if (reg.test(code2.value)) {
+          //通过
+          code2.nextElementSibling.innerHTML = '';
+          return true;
+        } else {
+          code2.nextElementSibling.innerHTML = '验证码不正确,请输入6位数字';
+          return false;
+        }
+      }
+
+      //占位
+      //占位
+      //占位
+      //占位
+      //占位
+      //占位
+      //占位
+      //占位
+      //占位
+
+      //【2】设置密码
+      const pwd = document.querySelector('[name=password]');
+      pwd.addEventListener('change', verifyPwd);
+      function verifyPwd() {
+        //定义规则
+        const reg = /^[a-zA-Z0-9_-]{6,20}$/;
+        //进行校验
+        if (reg.test(pwd.value)) {
+          //通过
+          pwd.nextElementSibling.innerHTML = '';
+          return true;
+        } else {
+          pwd.nextElementSibling.innerHTML = '格式错误，请输入6-20位小写字母或数字';
+          pwd.nextElementSibling.style.color = 'red';
+          return false;
+        }
+      }
+      //占位
+      //占位
+      //占位
+      //占位
+      //占位
+      //2次确认
+      //【6】二次确认密码
+      const confirm = document.querySelector('[name=confrim]');
+      confirm.addEventListener('change', verifyConfimPwd);
+      function verifyConfimPwd() {
+        if (confirm.value === pwd.value) {
+          confirm.nextElementSibling.innerHTML = '';
+          return true;
+        } else {
+          confirm.nextElementSibling.innerHTML = '两次密码输入不一致';
+          confirm.nextElementSibling.style.color = 'red';
+          return false;
+        }
+      }
+      //占位
+      //占位
+      //占位
+      //占位
+      //占位
+      //占位
+      //获取表单，阻止默认行为
+      const form = document.querySelector('.form');
+      form.addEventListener('submit', function (e) {
+        if (!verifyName() && !verifyPwd() && !verifyCode()) {
+          e.preventDefault();
+          alert('内容不能为空');
+          return;
+        }
+      });
+      const logo = document.querySelector('.tip-top');
+      logo.addEventListener('click', function () {
+        location.href = './logo.html';
+      });
+    </script>
+  </body>
+</html>

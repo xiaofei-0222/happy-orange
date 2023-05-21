@@ -1,0 +1,30 @@
+{
+  "id": "4017974",
+  "name": "乐橙项目",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1167186",
+      "name": "提示",
+      "font_class": "tishi",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "7408750",
+      "name": "密码",
+      "font_class": "mima",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "11372643",
+      "name": "安全",
+      "font_class": "anquan",
+      "unicode": "e8ab",
+      "unicode_decimal": 59563
+    }
+  ]
+}

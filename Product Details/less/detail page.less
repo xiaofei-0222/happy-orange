@@ -1,0 +1,1041 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-style: normal;
+    a{
+        color: #333 ;
+    }
+}
+
+body{ 
+    color: #333;
+    font-size: 16px;
+    min-width: 1200px;
+}
+.main-wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+.active{
+    background-color: #FDECED;
+    a {
+    color: #EE676D!important;
+    transition: all 0s!important;
+    }
+}
+.active2 {
+    border: 1px solid #666;
+}
+.nav_active{
+    a{
+        transition: color .3s!important;
+        
+        color: #EA4148!important;
+    }
+}
+.nav_pop_active{
+    a{
+        color: #EA4148!important;
+    }
+}
+.sec2_active{
+    
+     a {
+    transform: scale(1.2)!important;
+    color: #EA4148!important;
+    font-weight: bold!important;
+    // 
+     }
+     em{
+        display: inline-block!important;
+        width: 48px!important;
+        height: 3px!important;
+        background-color: #EA4148!important;
+    }
+}
+.pri_active{
+    box-shadow: 2px 3px 5px #fbddde;
+    border-width: 2px;
+    border: 1px solid #EA4148!important;
+    color: #EA4148!important;
+    line-height: 35px!important;
+    a{
+        transform: scale(1.2), !important;;
+    }
+}
+.con_active{
+    color: #fff!important;
+    background-color: #EA4148!important;
+    border: none!important;
+}
+.itm_active{
+    border: 1px solid #EA4148!important;
+}
+.disno{
+    display: none!important;
+}
+.disblk{
+    display: block!important;
+}
+        // header开始
+        .header{
+            background-color: #333;
+            a{
+                color: #ccc;
+                text-decoration: none;
+                margin: 0 5PX;
+                transition: all .5s;
+                &:hover{
+                    color: #fff;
+                }
+            }
+            .wrap{
+                display: flex;
+                
+                height: 36px;
+                line-height: 36px;
+                position: relative;
+                color: #ccc;
+                font-size: 12px;
+                justify-content: space-between;
+                align-items: center;
+                b{
+                    font-size: 12px;
+                   
+                    display: inline-block;
+                    font-weight: normal;
+                }
+                .lc_header_right {
+                    display: flex;
+                   .language{
+                    .language_down{
+                        min-width: 200px;
+                        min-height: 120px;
+                        position: absolute;
+                        background-color: #fff;
+                        border-radius: 7px;
+                        margin: 10px 0 10px -130px;
+                        transition: all .2s;
+                        transform-origin: center top;
+                        transform: scaleY(0);
+                        z-index: 99;
+                        
+                    ul{
+                        position: relative;
+                        transform-origin: center top;
+                        list-style: none;
+                        border: 1px solid #eee ;
+                        border-radius: 5%;
+                        z-index: 666;
+                        li{
+                        text-align: left;
+                            
+                            font-size: 14px;
+                            a{
+                                display: inline-block;
+                                width: 100%;
+                                 color: #606266;
+                                 margin: 0px 16px;
+                                span{
+                                    color: red;
+                                    margin: 0 2px;
+                                }
+                            }
+                            // &:hover{
+                            //     background-color: #FDECED;
+                            //     a {
+                            //         color: #EE676D;
+                            //         transition: all 0s;
+                            //     }
+                            // }
+                        }
+                        .icon-chevron-up{
+                            position: absolute;
+                            top: -20px;
+                            left: 80%;
+                            color: #eee;
+                            font-size: 20px;
+                            z-index: 1;
+
+                            // border-top: 8px solid transparent;
+                            // border-bottom: 8px solid #eee;
+                            // border-left: 8px solid transparent;
+                            // border-right: 8px solid transparent;
+                        }
+                    }
+                }
+                   }
+                   .oneman_center{
+
+                        .oneman_center_down{
+                            min-width: 120px;
+                            min-height: 120px;
+                            position: absolute;
+                            background-color: #fff;
+                            margin: 10px 0 10px -30px;
+                            border-radius:7px ;
+                            transition: all .2s;
+                            transform-origin: center top;
+                            transform: scaleY(0);
+                            z-index: 99;
+                            
+                        ul{
+                            position: relative;
+                            transform-origin: center top;
+                            list-style: none;
+                            border: 1px solid #eee ;
+                            border-radius: 5%;
+                            z-index: 666;
+                            padding: 10px 0px;
+                            li{
+                                font-size: 14px;
+                                text-align: center;
+                                
+                                a{
+                                    display: inline-block;
+                                    width: 100%;
+                                     color: #606266;
+                                     margin: 0 auto;
+                                    span{
+                                        color: red;
+                                        margin: 0 2px;
+                                    }
+                                }
+                                
+                                // &:hover{
+                                //     background-color: #FDECED;
+                                //     a {
+                                //         color: #EE676D;
+                                //     transition: all 0s;
+
+                                    }
+                                }
+                            }
+                            .icon-chevron-up{
+                                position: absolute;
+                                top: -20px;
+                                left: 42%;
+                                color: #eee;
+                                font-size: 20px;
+                                z-index: 1;
+
+                                // border-top: 8px solid transparent;
+                                // border-bottom: 8px solid #eee;
+                                // border-left: 8px solid transparent;
+                                // border-right: 8px solid transparent;
+                            }
+                        }
+                    }
+                   }
+                   .icon-xiala{
+                    font-size: 14px;
+                    padding-left: 3px;
+                   }
+                   .icon-yuyan{
+                    font-size: 12px;
+                   }
+                }
+        // header结束
+
+
+
+        // <!-- search   搜索 开始 -->
+        .lc_search{
+           
+            width: 100%;
+            height: 114px;
+            .lc_search_all{
+                
+                .lc_search_top{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: end;
+                    height: 82px;
+                    .search_Ctr{
+                        display: flex;
+                        // position: relative;
+                        margin-left: 100px;
+                        input::placeholder{
+                            font-size: 14px;   
+                            color: #aaa;
+                        }
+                        input{
+                            width: 600px;
+                            height: 36px;
+                            border: 1px solid #ea4148;
+                            padding: 0px 30px 0px 15px;
+                            outline: none;
+                            font-size: 16px;
+                            color: #666;
+                            margin-bottom: 10px;
+                            border-radius: 2px;
+                        }
+                        .search_btn{
+                            border: none;
+                            button{
+                                display: inline-block;
+                                width: 80px;
+                                height: 36px;
+                                margin-left: -2px;
+                                background-color: #EA4148;
+                                text-align: center;
+                                line-height: 36px;
+                                color: #fff;
+                                border: none;
+                            cursor: pointer;
+                            border-radius: 2px;
+                            }
+                        }
+                        .search_ipt{
+                            position: relative;
+                            .search_pudwn{
+                                display: none;
+                                position: absolute;
+                                z-index: 99;
+                                top: 35px;
+                                left: 0px;
+                                border: 1px solid #ea4148;
+                                width: 600px;
+                                font-size: 12px;
+                                color: #999;
+                                height: 150px;
+                                background-color: #fff;
+                                span{
+                                    padding: 8px 0px 8px 10px;
+                                    display: inline-block;
+                                    width: 600px;
+                                    border-bottom: 1px solid #e8e8e8;
+                                }
+                                li{
+                                    padding-left: 10px;
+                                    line-height: 30px;
+                                    font-size: 12px;
+                                    a{
+                                        display: inline-block;
+                                        color: #333;
+                                        height: 30px;
+                                        width: 596px;
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                    .search_rgt{
+                        &:hover{
+                           button{
+                            background: #FCECED;
+                            cursor: pointer;
+                            border: 1px solid #EA4148;
+                        } 
+                           span{
+                            color: #EA4148;
+                           }
+                           i{
+                            background-position: -152px -20px;
+                            transform: scale(1.145);
+                           }
+                        }
+                        button{
+                            width: 120px;
+                            height: 36px;
+                            margin-bottom: 10px;
+                            border: 1px solid #ccc;
+                            background-color: #fff;
+                            border-radius: 2px;
+                            line-height: 36px;
+                            span{
+                                i{
+                                    display: inline-block;
+                                    width: 19px;
+                                    height: 19px;
+                                    margin: 0px 0px  5px 0px;
+                                    vertical-align: middle;
+                                    background-image: url(../image/sprite.c5b48bc.png);
+                                    background-position: -152px 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // <!-- search   搜搜 结束 -->
+// nva 导航开始
+        .lc_nav{
+           
+            width: 100%;
+            border-bottom: 1px solid #eee;
+            box-shadow: 5px 3px 5px 0px hsla(0, 0%, 80%, 0.3);
+            font-weight: 700;
+            .lc_nav_all{
+                
+                .lc_nav_bottom{
+                    white-space: nowrap;
+                    display: flex;
+                   
+                    .nav_content{
+                        display: inline-block;
+                        padding: 0 40px 18px 0;
+                        a{
+                            padding-bottom: 15px;
+                            color: #333;
+                            font-size: 14px;
+                        }
+                    }
+                    .first{
+                        position: relative;
+                        .first_nav::before{
+                            content: "|";
+                            font-weight: 400;
+                            padding-right: 20px;
+                            top: -1px;
+                            color: #999;
+                        }
+                        .right_arrow{
+                            position: absolute;
+                            cursor: pointer;
+                            left: -30px;
+                            top: 4px;
+                            width: 16px;
+                            height: 16px;
+                            background-repeat: no-repeat;
+                            background-size: 100% 100%;
+                            background-position: 50%;
+                            background-image: url(../image/下载.png);
+                        }
+                    }
+                }
+            }
+            
+        }
+        .lc_nav_pop{
+            margin-top: -5px;
+            background-color: #fff;
+            position: absolute;
+            z-index: 5;
+            .pop_container{
+                text-align: center;
+                display: flex;
+                transition:all .2s;
+                transform: scaleY(0);
+                transform-origin: top center;
+                box-shadow: 4px 7px 7px -1px hsla(0, 0%, 80%, 0.5);
+                width: 100%;
+                padding: 0 160px;
+                a{
+                    font-size: 14px;
+                    color: #333;
+                    font-weight: normal;
+                }
+                p{
+                    color: #EA4148;
+                    font-weight: normal;
+                }
+            }
+        }
+// nva 导航结束
+//  item-content 开始
+.wrap{
+    position: relative;
+    z-index: 1;
+    .item-sec1{
+        width: 1200px;
+        margin: 0 auto 50px;
+        min-height: 570px;
+        display: flex;
+        flex-direction: column;
+       .item-sec1-top{
+            height: 50px;
+            line-height: 50px;
+            width: 100%;
+            font-size: 14px;
+            div{
+                .itp_1::after{
+                    content: '>';
+                    color: #999;
+                    margin: 0 5px;
+                }
+            }
+        }
+        // 商品详情右边开始
+        .item-sec1-bottom{
+            width: 100%;
+            display: flex;
+            min-height: 570px;
+            h3{
+                margin-bottom: 5px;
+            }
+            .item-sec1-left{
+                flex: 1;
+                margin-right: 30px;
+                div.itm_left_top{
+                    position: relative;
+                    img{
+                        width: 475px;
+                        height: 460px;
+                    }
+                    ul{
+                        width: 100%;
+                        position: absolute;
+                        top: 490px;
+                        .item_last_li{
+                            margin-right: 0px;
+                        }
+                        li{
+                            float: left;
+                            width: 80px;
+                            height: 80px;
+                            box-sizing: border-box;
+                            background-position: 50%;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            margin-right: 18.75px;
+                           
+                            img{
+                                width: 78px;
+                                height: 78px;
+                            }
+                        }
+                    }
+                }
+            }
+            .item-sec1-right{
+                width: 695px;
+                // 商品数量开始
+                .item-sec1-number{
+                    position: relative;
+                    p{
+                        position: absolute;
+                        left: 200px;
+                        bottom: 10px;
+                        font-size: 14px;
+                        color: #999;
+                    }
+                    div{
+                        
+                        display: flex;
+                        vertical-align: middle;
+                        div.itm-num{
+                            div{
+                                border: 1px solid #ddd;
+                                transition: all .5s;
+                                cursor: pointer;
+                                 border-radius: 2px;
+                        }
+                        }
+                        
+                        span{
+                            display: inline-block;
+                            width: 40px;
+                            height: 40px;
+                            border:  1px solid #ddd;
+                            border-radius: 2px;
+                            text-align: center;
+
+                            
+                        }
+                        .el-input-number_decrease{
+                            i:before{
+                                display: inline-block;
+                                font-size: 12px;
+                                content: '—';
+                                line-height: 38px;
+                                
+                            }
+                        }
+                        .el-input-number_center{
+                            display: inline-block;
+                            height: 40px;
+                            border-radius: 0px;
+                            border: 0px;
+                            input{
+                            width: 100px;
+                            height: 38px;
+                            outline: none;
+                            border:none;
+                            text-align: center;
+                            }
+                        }
+                        .el-input-number_increase{
+                            i:before{
+                                content: '+';
+                                display: inline-block;
+                                line-height: 34px;
+
+                            }
+                        }
+                    }
+                }
+                // 商品数量结束
+                .item-sec1-button{
+                    margin: 25px 0;
+                    height: 57.6px;
+                // 商品列表下的立即购买 收藏  购物车开始
+                    .el-button{
+                        display: inline-block;
+                        line-height: 1;
+                        white-space: nowrap;
+                        cursor: pointer;
+                        background: #fff;
+                        border: 1px solid #dcdfe6;
+                        color: #606266;
+                        text-align: center;
+                        box-sizing: border-box;
+                        outline: none;
+                        margin: 0;
+                        transition: .1s;
+                        font-weight: 500;
+                        padding: 12px 20px;
+                        font-size: 14px;
+                        border-radius: 2px;
+                    }
+                    .button-buy{
+                        min-width: 210px;
+                        height: 57.6px;
+                        color: #EA4148;
+                        font-size: 20px;
+                        border: 1px solid #EA4148;
+                        margin:  0 10px 0 0 ;
+                    }
+                    .el-button--primary{
+                        min-width: 210px;
+                        height: 57.6px;
+                        background-color: #EA4148;
+                        color: #fff;
+                        font-size: 20px;
+                        padding: 0 20px;
+                        margin: 0 10px;
+                    }
+                    .button-add{
+                        height: 57.6px;
+                        font-size: 14px;
+                        transform: translateY(-8px);
+                    }
+                }
+                // 商品列表下的立即购买 收藏 购物车结束
+                //    七天退货保障开始
+                .item-sec1-server{
+                    display: flex;
+                    align-items: center;
+                    li{
+                        
+                        margin-right: 20px;
+                        font-size: 12px;
+                        color: #666;
+                        }
+                        em{
+                            display: inline-block;
+                            width: 3px;
+                            height: 3px;
+                            background-color: #EA4148;
+                            vertical-align: middle;
+                            margin-right: 7px;
+                        }
+                    }
+                }
+                // 7天退货保障结束
+                 // 价格
+                    div{
+                        h3{
+                            font-size: 14px;
+                            color: #666;
+                            height: 25px;
+                            line-height: 25px;
+                            font-weight: 700;
+                        }
+                        .item-sec1-storage{
+                            ul {
+                                display: flex;
+                                flex-wrap: wrap;
+                                
+                                li{
+                                    margin: 10px 10px 10px 0px;
+                                    width: 170px;
+                                    height: 40px;
+                                    border: 1px solid #333;
+                                    text-align: center;
+                                    transition: all .4s ;
+                                    line-height: 40px;
+                                    cursor: pointer;
+                                    // a{
+                                    //     color: #606266;
+                                    //     font-size: 14px;
+                                    //     line-height: 40px;
+                                    //     display: inline-block;
+                                    //     width: 100%;
+                                    //     transition: all;
+                                    // }
+                                }
+                            }
+                        }
+                        }
+                        // 价格结束
+                // 右边爆款二字开始
+               .item-sec1-label{
+                margin-bottom: 10px;
+                span{
+                    display: inline-block;
+                    padding: 2px 8px;
+                    font-size: 12px;
+                    background-color: #f4a0a3;
+                    margin-right: 10px;
+                    border-radius: 2px;
+                    color: #fff;
+                }
+                }
+                // 详情右边爆款二字结束
+                // 详情标题开始
+                .item-sec1-title{
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: #333;
+                    margin-bottom: 10px;
+                }
+
+                .item-sec1-info{
+                    font-size: 14px;
+                    color: #999;
+                    margin-bottom: 20px;
+                    word-break: break-all;
+                }
+                // 详情标题结束
+                // 详情倒计时开始
+                .item-sec1-activity{
+                    width: 100%;
+                    height: 58px;
+                    display: flex;
+                    align-items: center;
+                    background-image: url(../image/detail_seckill_bg.4655a50.png);
+                    img {
+                        height: 24px;
+                        display: inline-block;
+                        margin: 0 20px;
+                    };
+                    p{
+                        
+                            line-height: 58px;
+                            font-size: 16px;
+                            color: #fff;
+                            flex: 1;
+                            justify-content: space-between;
+                            em{
+                                min-width: 28px;
+                                height: 28px;
+                                padding: 0 5px;
+                                background-color: #fff;
+                                border-radius: 2px;
+                                color: #ea4148;
+                                display: inline-block;
+                                line-height: 28px;
+                                text-align: center;
+                            }
+                        
+                    }
+                }
+                // 倒计时结束
+                // 详情商品种类开始
+                .item-sec1-table{
+                    width: 100%;
+                    background-color: #f2f5f8;
+                    margin-bottom: 25px;
+                    padding: 10px 0;
+                    
+                    .item-sec1-price{
+                        position: relative;
+                        .active-sell{
+                            margin-top: -10px;
+                            padding-bottom: 10px;
+                            em{
+                                font-size: 12px;
+                                color: #333;
+                                margin-left: -7px;
+                                font-weight: 700;
+                            }
+                        }
+                        .label{
+                            font-size: 12px;
+                            color: #333;
+                            margin: 0 12px 0 20px;
+                            letter-spacing: 7px;
+                            display: inline-block;
+                           
+                        }
+                        
+                        }
+                        .price{
+                            margin-bottom: 10px;
+                            
+                            em{
+                                font-size: 14px;
+                                margin-right: 10px;
+                                color: #ea4148;
+                                font-weight: 700;
+                                margin-left: -7px;
+                                i{
+                                    font-size: 36px;
+                                    
+                                }
+                            }
+                            b{
+                                font-size: 14px;
+                                color: #999;
+                                font-weight: 400;
+                                text-decoration: line-through;
+                                -webkit-user-select: none;
+                                -moz-user-select: none;
+                                user-select: none;
+                            }
+                        }
+                        }
+                        // 详情商品种类结束
+                    }
+                }
+        // 商品详情右边结束
+     // 商品图片开始
+    .item-sec2{
+        div{
+           
+            margin-bottom: 10px;
+            border-bottom:1px solid #e8e8e8;
+            ul{
+                width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                li{
+                    width: 160px;
+                    height: 45px;
+                    line-height: 30px;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    a{
+                        display: inline-block;
+                        transition: all .5s;
+                        transform: scale(1);
+                    }
+                   
+                }
+            }
+        }
+    }
+    // 商品图片结束
+    // 商品底部开始
+    .item-sec3{
+        div:nth-child(3){
+            img{
+                width: 100%;
+            }
+        }
+        .content{
+            display: none;
+        }
+        .item-content{
+            // 商品评论
+            .comment-top{
+                display: flex;
+                margin: 30px 0px;
+                align-items: center;
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+                span{
+                    margin: 0 10px;
+                }
+                ul{
+                    display: flex;
+                   
+                    li{
+                        height: 30px;
+                        text-align: center;
+                        line-height: 30px;
+                        width: 90px;
+                        font-size: 14px;
+                        margin: 10px;
+                        background-color: #fff;
+                        border: 1px solid #999;
+                        border-radius: 15px;
+                        transition: all .2s;
+                        cursor: pointer;
+
+                    }
+                }
+            }
+            .comment-bottom{
+                display: flex;
+                .comment-btm-lt{
+                    margin: 0px 25px 15px 0px;
+                    div{
+                        width: 50px;
+                        img{
+                            width: 100%;
+                            margin: 5px 0;
+                        }
+                        p{
+                            text-align: center;
+                        }
+                    }
+                }
+                .comment-btm-rt{
+                    flex: 1;
+                    .co-btm-rt-top{
+                        padding-top: 10px;
+                    }
+                    .star{
+                        display: flex;
+                        position: relative;
+                        div{
+                            margin: 2px;
+                        }
+                        
+                    }
+                    .com-file{
+                        margin: 10px 0;
+                        display: inline-block;
+                        font-size: 14px;
+                        color: #999;
+                    }
+                    .com-msg{
+                        margin: 10px 0;
+                        background-image: url(../image/detail_evaluate_zdck.21da84c.png);
+                        background-size: 40px 54px;
+                        background-repeat: no-repeat;
+                        background-position-y: 3px;
+                        padding-left: 50px;
+                        min-height: 60px;
+                        font-size: 14px;
+                    }
+                    .com-pic{
+                        display: flex;
+                        div{
+                           margin: 0 5px;
+                            img{
+                                width: 120px;
+                                height: 120px;
+                            }
+                        }
+                    }
+                    i{
+                        width: 40px;
+                        height: 54px;
+                        img{
+                           width: 100%;
+                        }
+                    }  
+                    .com-data{  
+                        font-size: 14px;
+                        color: #999;
+                        position: absolute;  
+                        right: 0;
+                        top: 0;       
+                                   
+                }
+                   
+                }
+            }
+           
+            // 商品评论结束
+        }
+        div.item-content{
+            p{
+                display: flex;
+                flex-direction: column;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .m-footer {
+            background-color: #fff;
+            margin-bottom: 10px;
+            .footer-main{
+                
+                .main-wrap{
+                    .footer-list{
+                    
+                        display: inline-block;
+                        vertical-align: top;
+                        width: 870px;
+                        margin: 30px 0 30px 30px;
+                        border-right: 1px solid #ccc;
+                        li{
+                            width: 19%;
+                            display: inline-block;
+                            vertical-align: top;
+                        }
+                        dl{
+                            font-size: 12px;
+                            color: #666;
+                            line-height: 1;
+                            dt{
+                                color: #333;
+                                font-size: 14px;
+                                margin-bottom: 28px;
+                            }
+                            dd{
+                                margin-bottom: 18px;
+                                cursor: pointer;
+                            }
+                            }
+                        }
+                        }
+                .service{
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 290px;
+                    text-align: center;
+                    margin-top: 30px;
+                    p{
+                        font-size: 22px;
+                        color: #f18d00;
+                        em{
+                            display: inline-table;
+                            vertical-align: top;
+                            padding: 2px 5px;
+                            font-size: 14px;
+                            border: 1px solid #f18d00;
+                            line-height: 1.2;
+                            margin-top: 3px;
+                        }
+                        span{
+                            display: block;
+                            font-size: 12px;
+                            color: #999;
+                        }
+                    }
+                }
+                }
+                }
+            }
+    //商品底部结束 
+    .footer-icp{
+        .tc{
+            
+           
+                text-align: center;
+                font-size: 12px;
+                color: #999;
+                vertical-align: middle;
+                a{
+                    font-size: 12px;
+                color: #999;
+                }
+            }
+        }  
+    }
+        
+    
+     
+           
+            
+            
+    
+
+
+// item-content 结束

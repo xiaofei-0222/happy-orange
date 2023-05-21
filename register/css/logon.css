@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+i {
+    font-style: normal
+}
+
+a{
+    text-decoration: none;
+}
+
+.main{
+    width: 1349px;
+    height: 900px;
+    background-color: #fab745;
+    background: url(../images/shop_pc.093f0a6.png) no-repeat 50%, linear-gradient(135deg, #ffb13d, #f6be4e);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.main .logo {
+    padding-right: 155px;
+    padding-top: 60px;
+    height: 165px;
+    text-align: right;
+}
+
+.main .content {
+    position: relative;
+    float: right;
+    margin: 30px 155px 0 0 ;
+    width: 500px;
+    padding: 40px 0;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 4px 0 #fff;
+
+}
+
+.content .creat_title h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.content .creat_title span {
+    font-size: 14px;
+}
+
+.content .creat_title .enter {
+    color: #f18d00;
+    cursor: pointer;
+}
+
+.content .creat_form {
+    margin: 10px auto 0;
+    width: 360px;
+}
+
+.content .creat_form .item {
+    position: relative;
+}
+
+.content .creat_form .item i {
+    position: absolute;
+    top: 17px;
+    left: 10px;
+   
+}
+
+.content .creat_form .item .code {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 14px;
+    color: #f18d00;
+    cursor: pointer;
+
+}
+
+.content .creat_form .item .tip {
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    font-size: 12px;
+    color: #a3a1a1;
+}
+
+.content .creat_form  .public {
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    font-size: 12px;
+    color: #ef6545;
+}
+ 
+.content .creat_form input,
+.content .creat_form .btn {
+    margin-bottom: 30px;
+    padding: 0 35px;
+    width: 360px;
+    height: 50px;
+    border-radius: 4px;
+    border:none;
+    outline: none;
+    border: 1px solid #e7e6e6;
+}
+
+.content .creat_form input:hover{
+    border: 1px solid #f18d00;
+}
+
+.content .creat_form .btn {
+    text-align: center;
+    line-height: 50px;
+    font-size: 12px;
+    border: 1px solid #cfcfcf;
+    border-left: 6px solid #5381fd;
+    background-image: linear-gradient(
+        transparent,
+        rgba(204, 204, 204, 0.39)
+    )
+}
+
+.content .creat_form ::placeholder {
+    color: #444;
+}
+
+.content .creat_form .iconfont {
+    color: #444;
+}
+
+.content .creat_form .close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/2.jpg);
+    background-size: contain;
+}
+
+.content .creat_form .open {
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/1.png);
+}
+
+.creat_bottom {
+    position: relative;
+    font-size: 14px;
+}
+
+
+.creat_bottom input {
+    position: absolute;
+    top: 3px;
+    left: 76px;
+    
+}
+
+.creat_bottom a {
+    margin-left: 6px;
+    color: #f18d00;
+    cursor: pointer;
+}
+
+.creat_btn_submit input {
+    margin-top: 20px;
+    width: 360px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    background-color: #ddd;
+    color: #fff;
+    cursor: not-allowed;
+}
+
+.content .creat_form  .active {
+    border: 1px solid #f18d00;
+}
+
+.foot {
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+    color: #aaa;
+}

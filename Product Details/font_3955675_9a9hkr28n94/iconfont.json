@@ -1,0 +1,79 @@
+{
+  "id": "3955675",
+  "name": "19期",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "11372701",
+      "name": "收藏",
+      "font_class": "shoucang",
+      "unicode": "e8b9",
+      "unicode_decimal": 59577
+    },
+    {
+      "icon_id": "7588133",
+      "name": "左",
+      "font_class": "zuo",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "15722754",
+      "name": "右",
+      "font_class": "you",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "35043323",
+      "name": "chevron-up",
+      "font_class": "chevron-up",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "33681939",
+      "name": "下啦",
+      "font_class": "xiala",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "7549360",
+      "name": "收起",
+      "font_class": "RectangleCopy1",
+      "unicode": "e6a5",
+      "unicode_decimal": 59045
+    },
+    {
+      "icon_id": "7549365",
+      "name": "减",
+      "font_class": "Rectangle",
+      "unicode": "e6a6",
+      "unicode_decimal": 59046
+    },
+    {
+      "icon_id": "7549369",
+      "name": "关闭",
+      "font_class": "RectangleCopy2",
+      "unicode": "e6a7",
+      "unicode_decimal": 59047
+    },
+    {
+      "icon_id": "7549831",
+      "name": "删除",
+      "font_class": "RectangleCopy3",
+      "unicode": "e6a9",
+      "unicode_decimal": 59049
+    },
+    {
+      "icon_id": "16399020",
+      "name": "语言",
+      "font_class": "yuyan",
+      "unicode": "e85f",
+      "unicode_decimal": 59487
+    }
+  ]
+}

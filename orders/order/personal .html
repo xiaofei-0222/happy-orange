@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人中心</title>
+    <link rel="stylesheet" href="./iconfont/iconfont.css" />
+    <link rel="stylesheet" href="./common.css" />
+    <link rel="stylesheet" href="./personal .css" />
+    <script src="./jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- 顶部 -->
+    <div class="top">
+      <div class="box wrapper">
+        <div class="left">乐橙官网 <span> | </span> 开放平台</div>
+        <div class="rigth">
+          <span class="hello">你好 , Elms2 </span>
+          <a href="javascript:;" class="show"
+            >个人中心
+            <i class="iconfont icon-xialajiantouxiao"></i>
+            <div class="none">
+              <div class="color">我的收藏</div>
+              <div class="color">我的优惠卷</div>
+              <div class="color exit">退出登录</div>
+            </div>
+          </a>
+          <a href="javascript:;" class="ou">| 我的订单 |</a>
+          <a href="javascript:;">
+            <i class="iconfont icon-ditu_diqiu"></i>
+            语言选择</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- logo -->
+    <div class="logo">
+      <div class="search wrapper">
+        <a href="javascript:;"><img src="./imges/乐橙官方商城.png" alt="" class="img" /></a>
+        <!-- 收缩框 -->
+        <div class="ipt">
+          <input type="text" placeholder="请输入你想搜索的商品" />
+          <div class="btn">
+            <button>搜索</button>
+          </div>
+        </div>
+        <!-- 购物车 -->
+        <div class="carts">
+          <button class="">
+            <a href="javascript:;">
+              <i class="iconfont icon-gouwuche"></i>
+              购物车
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- 导航 -->
+    <div class="tab">
+      <div class="tab-nav wrapper">
+        <i class="frist">首页</i>
+        <ul>
+          <li><a class="red" href="javascript:;">室内摄像机</a></li>
+          <li><a href="javascript:;">室外摄像机</a></li>
+          <li><a href="javascript:;">电池相机</a></li>
+          <li><a href="javascript:;">猫眼门铃</a></li>
+          <li><a href="javascript:;">网关传感</a></li>
+          <li><a href="javascript:;">智能门锁</a></li>
+          <li><a href="javascript:;">行车记录仪</a></li>
+          <li><a href="javascript:;">家庭清洁</a></li>
+          <li><a href="javascript:;">照明电工</a></li>
+        </ul>
+        <i class="second iconfont icon-right-circle-fill"></i>
+        <span>|</span>
+        <span>服务支持</span>
+        <span>咨询中心</span>
+        <!-- tab下拉商品栏 -->
+        <!--         <div class="tab-content">
+          <div class="item">
+            <a href="javascript:;">
+              <img src="./image/1-1.jpeg" alt="" />
+              <p>A33E超清全景摄像机</p>
+              <i>￥359</i>
+            </a>
+            <a href="#">
+              <img src="./image/1-2.jpg" alt="" />
+              <p>智慧安防日大礼包，限量500</p>
+              <i>￥0.01</i>
+            </a>
+            <a href="#">
+              <img src="./image/1-3.jpg" alt="" />
+              <p>【新品】S2D-3M超清300万</p>
+              <i>￥239</i>
+            </a>
+            <a href="#">
+              <img src="./image/1-4.jpg" alt="" />
+              <p>S2D-5M 超清500万全景室</p>
+              <i>￥269</i>
+            </a>
+            <a href="#">
+              <img src="./image/1-5.jpeg" alt="" />
+              <p>TP7S-4M超清400万搭配云</p>
+              <i>￥329</i>
+            </a>
+            <a href="#">
+              <img src="./image/1-6.jpeg" alt="" />
+              <p>TP7S-4M超清400万搭配云</p>
+              <i>￥249</i>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="./image/2-1.jpeg" alt="" />
+              <p>室外防水智能全彩全景摄像</p>
+              <i>￥399</i>
+            </a>
+            <a href="#">
+              <img src="./image/2-2.jpeg" alt="" />
+              <p>TS6-300万超清全彩防水可</p>
+              <i>￥269</i>
+            </a>
+            <a href="#">
+              <img src="./image/2-3.jpeg" alt="" />
+              <p>【新品】TS6-5M500万极清/p><i>￥299</i></p></a
+            >
+
+            <a href="#">
+              <img src="./image/2-4.jpeg" alt="" />
+              <p>TS2F-200万日夜全彩夜视超</p>
+              <i>￥269</i>
+            </a>
+            <a href="#">
+              <img src="./image/2-5.jpeg" alt="" />
+              <p>K71FT-4G智能全彩球机</p>
+              <i>￥399</i>
+            </a>
+            <a href="#">
+              <img src="./image/2-6.jpeg" alt="" />
+              <p>4G全彩室外云台防水无网可</p>
+              <i>￥249</i>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="./image/3-1.jpeg" alt="" />
+              <p>TB3-300万防水电池相机</p>
+              <i>￥399</i>
+            </a>
+            <a href="#">
+              <img src="./image/3-2.jpeg" alt="" />
+              <p>TB6L-400万全彩无线防水室外</p>
+              <i>￥499</i>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="./image/4-1.jpeg" alt="" />
+              <p>2K超清可视门铃DB20</p>
+              <i>￥279</i>
+            </a>
+            <a href="#">
+              <img src="./image/4-2.jpeg" alt="" />
+              <p>DB12-智能可视门铃猫眼</p>
+              <i>￥499</i>
+            </a>
+            <a href="#">
+              <img src="./image/4-3.jpeg" alt="" />
+              <p>VD2-1080P高清门铃智能猫眼</p>
+              <i>￥649</i>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="./image/5-1.jpg" alt="" />
+              <p>老人看护套装，白天居家安</p>
+              <i>￥729</i>
+            </a>
+            <a href="#">
+              <img src="./image/5-2.jpg" alt="" />
+              <p>家庭防火套装，高敏度精准</p>
+              <i>￥1139</i>
+            </a>
+            <a href="#">
+              <img src="./image/5-3.jpg" alt="" />
+              <p>老人看护套装，实时知悉老</p>
+              <i>￥798</i>
+            </a>
+            <a href="#">
+              <img src="./image/5-4.jpg" alt="" />
+              <p>家庭无人值守套装，出门再</p>
+              <i>￥798</i>
+            </a>
+            <a href="#">
+              <img src="./image/5-5.jpeg" alt="" />
+              <p>燃气泄漏传感器，需搭配网</p>
+              <i>￥232</i>
+            </a>
+            <a href="#">
+              <img src="./image/5-6.jpeg" alt="" />
+              <p>无线声光报警器，需搭配网</p>
+              <i>￥153</i>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="./image/6-1.jpg" alt="" />
+              <p>300W超清视频云锁V1</p>
+              <i>￥1799</i>
+            </a>
+            <a href="#">
+              <img src="./image/6-2.png" alt="" />
+              <p>乐橙地产行业锁DH-DPL3312</p>
+              <i>￥3280</i>
+            </a>
+            <a href="#">
+              <img src="./image/6-3.jpeg" alt="" />
+              <p>乐橙地产行业锁DPL34-H(O)</p>
+              <i>￥2999</i>
+            </a>
+            <a href="#">
+              <img src="./image/6-4.png" alt="" />
+              <p>乐橙地产行业锁DPL34-G(O)</p>
+              <i>￥2999</i>
+            </a>
+            <a href="#">
+              <img src="./image/6-5.jpeg" alt="" />
+              <p>K1-多维指纹识别智能锁</p>
+              <i>￥1299</i>
+            </a>
+            <a href="#">
+              <img src="./image/6-6.jpeg" alt="" />
+              <p>T120-乐橙指纹锁【电信定制</p>
+              <i>￥1599</i>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="./image/7-1.jpeg" alt="" />
+              <p>乐橙T200行车记录仪高清口红</p>
+              <i>￥179</i>
+            </a>
+            <a href="#">
+              <img src="./image/7-2.jpeg" alt="" />
+              <p>乐橙T400行车记录仪超清口</p>
+              <i>￥239</i>
+            </a>
+            <a href="#">
+              <img src="./image/7-3.jpeg" alt="" />
+              <p>乐橙400万超清清行车记录仪</p>
+              <i>￥299</i>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="./image/8-1.jpeg" alt="" />
+              <p>乐橙洗地机SV1，吸拖洗一机</p>
+              <i>￥2499</i>
+            </a>
+            <a href="#">
+              <img src="./image/8-2.jpeg" alt="" />
+              <p>扫地机器人 扫拖一体自动集尘</p>
+              <i>￥2499</i>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="./image/9-1.jpeg" alt="" />
+              <p>智能彩光灯泡B5</p>
+              <i>￥49</i>
+            </a>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <!-- 侧边栏 -->
+    <div class="navs">
+      <div class="heart warpper">
+        <div class="sidebar">
+          <ul>
+            <li class="highlight"><a href="javascript:;">个人中心</a></li>
+            <li><a href="javascript:;">修改密码</a></li>
+            <li><a href="javascript:;" class="manager">地址管理</a></li>
+            <li><sa href="javascript:;">我的收藏</sa></li>
+            <li></li>
+            <li><a href="javascript:;">我的订单</a></li>
+            <li><a href="javascript:;">我的优惠卷</a></li>
+          </ul>
+        </div>
+        <!-- 内容 -->
+        <div class="content">
+          <div class="top_box">
+            <div class="info">
+              <img src="./imges/avatar04.png" alt="" />
+              <p class="username">Elms2</p>
+              <p class="account">123****890</p>
+            </div>
+            <!-- 订单 -->
+          </div>
+          <div class="btn_box">
+            <!-- 付款  -->
+            <div class="paid">
+              <i class="iconfont icon-daifukuandingdan"></i>
+              <p>待付款订单: <span>0</span></p>
+              <a href="#">查看订单></a>
+            </div>
+            <!--待发货  -->
+            <div class="shipped">
+              <i class="iconfont icon-daifahuodingdan1"></i>
+              <p>待发货订单: <span>0</span></p>
+              <a href="#">查看订单></a>
+            </div>
+            <!-- 待收货 -->
+            <div class="received">
+              <i class="iconfont icon-daishouhuo"></i>
+              <p>待收货订单: <span>0</span></p>
+              <a href="#">查看订单></a>
+            </div>
+            <!-- 待评价 -->
+            <div class="evaluated">
+              <i class="iconfont icon-pingjia"></i>
+              <p>待评价订单: <span>0</span></p>
+              <a href="#">查看订单></a>
+            </div>
+          </div>
+        </div>
+        <!-- 地址管理 -->
+        <div class="address">
+          <div class="left">
+            <h1>
+              地址管理
+              <span>
+                您已创建
+                <span class="red">0</span>
+                个收货地址，最多可创建10个
+              </span>
+            </h1>
+          </div>
+          <button class="addto">
+            <span>添加新地址</span>
+          </button>
+          <div class="empty">您还没有收货地址~快来添加吧</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 电梯导航 -->
+    <div class="elevator">
+      <ul>
+        <li>
+          <a href="#">
+            <i class="iconfont icon-gouwuche"></i>
+            购物车
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="iconfont icon-kefu"></i>
+            客服
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="iconfont icon-tubiao_fankui"></i>
+            反馈
+          </a>
+        </li>
+        <li class="backtop">
+          <a href="#">
+            <i class="iconfont icon-icon"></i>
+            返回顶部
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- 推荐 -->
+    <div class="referral wrapper">
+      <h3>大家都在买</h3>
+      <div class="goods-list">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="./imges/resize_w_190_h_190 (1).jpg" alt="" />
+              <p class="title">365天只换不修</p>
+              <h4>TP7S-4M超清400万全景室内家用云...</h4>
+              <p class="introduce">400万超清 闪光告警</p>
+              <p class="time">限时价 <span>¥ 249</span></p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./imges/resize_w_190_h_190 (1).jpg" alt="" />
+              <p class="title">365天只换不修</p>
+              <h4>TP7S-4M超清400万全景室内家用云...</h4>
+              <p class="introduce">400万超清 闪光告警</p>
+              <p class="time">限时价 <span>¥ 249</span></p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="./imges/resize_w_190_h_190 (1).jpg" alt="" />
+              <p class="title">365天只换不修</p>
+              <h4>TP7S-4M超清400万全景室内家用云...</h4>
+              <p class="introduce">400万超清 闪光告警</p>
+              <p class="time">限时价 <span>¥ 249</span></p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./imges/resize_w_190_h_190 (1).jpg" alt="" />
+              <p class="title">365天只换不修</p>
+              <h4>TP7S-4M超清400万全景室内家用云...</h4>
+              <p class="introduce">400万超清 闪光告警</p>
+              <p class="time">限时价 <span>¥ 249</span></p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./imges/resize_w_190_h_190 (1).jpg" alt="" />
+              <p class="title">365天只换不修</p>
+              <h4>TP7S-4M超清400万全景室内家用云...</h4>
+              <p class="introduce">400万超清 闪光告警</p>
+              <p class="time">限时价 <span>¥ 249</span></p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./imges/resize_w_190_h_190 (1).jpg" alt="" />
+              <p class="title">365天只换不修</p>
+              <h4>TP7S-4M超清400万全景室内家用云...</h4>
+              <p class="introduce">400万超清 闪光告警</p>
+              <p class="time">限时价 <span>¥ 249</span></p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./imges/resize_w_190_h_190 (1).jpg" alt="" />
+              <p class="title">365天只换不修</p>
+              <h4>TP7S-4M超清400万全景室内家用云...</h4>
+              <p class="introduce">400万超清 闪光告警</p>
+              <p class="time">限时价 <span>¥ 249</span></p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./imges/resize_w_190_h_190 (1).jpg" alt="" />
+              <p class="title">365天只换不修</p>
+              <h4>TP7S-4M超清400万全景室内家用云...</h4>
+              <p class="introduce">400万超清 闪光告警</p>
+              <p class="time">限时价 <span>¥ 249</span></p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 底部通栏 -->
+    <div class="foot">
+      <div class="footer wrapper">
+        <div class="top"><img src="./imges/footer.bd40d9d.png" alt="" /></div>
+        <div class="bottom">
+          <div class="left">
+            <dl>
+              <dt>新手上路</dt>
+              <dd>商品退货保障</dd>
+              <dd>订单的几种状态</dd>
+              <dd>顾客必读</dd>
+            </dl>
+            <dl>
+              <dt>购物指南</dt>
+              <dd>简单的购物流程</dd>
+              <dd>网站免责声明</dd>
+              <dd>体贴的售后服务</dd>
+              <dd>非会员购物通道</dd>
+              <dd>会员等级折扣</dd>
+            </dl>
+            <dl>
+              <dt>支付/配送方式</dt>
+              <dd>关于送货和验货</dd>
+              <dd>网上支付小贴士</dd>
+              <dd>订单何时出库</dd>
+              <dd>配送方式</dd>
+              <dd>支付方式</dd>
+            </dl>
+            <dl>
+              <dt>服务条款</dt>
+              <dd>隐私保护政策</dd>
+              <dd>历史协议版本</dd>
+              <dd>乐橙服务协议</dd>
+              <dd>网站使用条款</dd>
+              <dd>开源软件条款</dd>
+            </dl>
+            <dl>
+              <dt>公司简介</dt>
+              <dd>证照信息</dd>
+              <dd>乐橙简介</dd>
+              <dd>关于我们</dd>
+              <dd>联系我们</dd>
+            </dl>
+          </div>
+          <div class="right">
+            <img src="./imges/客服热线.png" alt="" />
+            <p>
+              400-672-8169
+              <em>繁忙</em>
+              <span>（工作日:08:30-20:00，节假日:09:30-20:00）</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 最底部 备案号-->
+    <div class="down wrapper">
+      <p>
+        杭州华橙网络科技有限公司 浙ICP备16023676号<br />
+        <span></span> 浙公网安备33010802009519号<br />
+        增值电信业务经营许可证: 浙B2-20170129<br />
+        Copyright © 2014 - 2023 IMOU. All Rights Reserved.
+      </p>
+    </div>
+    <script src="./personal.js"></script>
+    <script>
+      const hello = document.querySelector('.hello');
+      const exit = document.querySelector('.exit');
+      const img = document.querySelector('.img');
+      function render() {
+        //从本地获取数据
+        const data = localStorage.getItem('uname');
+        if (data) {
+          hello.innerHTML = `${data}`;
+        } else {
+          hello.innerHTML = '';
+        }
+      }
+      render();
+
+      exit.addEventListener('click', function () {
+        location.href = '../../login/logo.html';
+      });
+      img.addEventListener('click', function () {
+        location.href = '../../index.html';
+      });
+    </script>
+  </body>
+</html>

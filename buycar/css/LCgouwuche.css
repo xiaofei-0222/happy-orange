@@ -1,0 +1,636 @@
+.bigBox {
+  width: 100%;
+  height: 100%;
+  background-color: #efefef;
+}
+.lan {
+  background: #333;
+  width: 100%;
+  height: 37px;
+}
+.lan .warp {
+  width: 1200px;
+  margin: 0 auto;
+  height: 36px;
+  line-height: 36px;
+  color: #ccc;
+  font-size: 12px;
+}
+.car {
+  background-color: #efefef;
+}
+.mycar {
+  min-height: 300px;
+  margin-bottom: 20px;
+  width: 1200px;
+  margin: 0 auto;
+}
+.mycar h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #333;
+  padding: 28px 0;
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+}
+.mycar h3 i {
+  position: absolute;
+  top: 20px;
+  left: 123px;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 20px;
+  text-align: center;
+  padding: 0 5px;
+  color: #fff;
+  background: #f18d00;
+  border-radius: 10px 10px 10px 0;
+}
+.mycar .car-goods {
+  position: relative;
+  z-index: 1;
+}
+.mycar .car-goods .hd {
+  margin-bottom: 0;
+}
+.mycar .car-goods .hd dt {
+  padding: 10px 0;
+  height: 40px;
+  border-bottom: 1px solid #f2f5f8;
+  background: #fff;
+  font-size: 0;
+}
+.mycar .car-goods .hd dt span {
+  line-height: 20px;
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1;
+  color: #999;
+}
+.mycar .car-goods .hd dt .info {
+  width: 500px;
+  padding: 0 100px 0 0;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 188px;
+}
+.mycar .car-goods .hd dt .price {
+  color: #333;
+  width: 120px;
+  text-align: center;
+  position: relative;
+  color: #999;
+}
+.mycar .car-goods .hd dt .number {
+  width: 120px;
+  text-align: center;
+}
+.mycar .car-goods .hd dt .amount {
+  width: 120px;
+  text-align: center;
+}
+.mycar .car-goods .hd dt .action {
+  width: 110px;
+  text-align: center;
+}
+.mycar .car-goods dl {
+  margin-bottom: 10px;
+}
+.mycar .car-goods dl dd {
+  position: relative;
+  background: #fff;
+  font-size: 0;
+  padding: 30px 40px;
+}
+.mycar .car-goods dl dd span {
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1;
+  color: #999;
+}
+.mycar .car-goods dl dd .click-wrapper {
+  height: 100px;
+  padding-top: 42px;
+  vertical-align: middle;
+}
+.mycar .car-goods dl dd .click-wrapper .click {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #999;
+  border-radius: 16px;
+  cursor: pointer;
+  margin-right: 14px;
+}
+.mycar .car-goods dl dd .pic {
+  width: 120px;
+}
+.mycar .car-goods dl dd .pic img {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  vertical-align: middle;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  border: none;
+}
+.mycar .car-goods dl dd .info {
+  width: 500px;
+  padding: 0 100px 0 0;
+  cursor: pointer;
+  font-size: 12px;
+}
+.mycar .car-goods dl dd .info strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 12px;
+  color: #333;
+  line-height: 18px;
+}
+.mycar .car-goods dl dd .price {
+  color: #333;
+  width: 120px;
+  text-align: center;
+  position: relative;
+  padding-top: 0px;
+}
+.mycar .car-goods dl dd .price em {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  margin-left: -22.5px;
+  width: 45px;
+  height: 18px;
+  background: #ea4148;
+  color: #fff;
+  border-radius: 2px;
+  font-size: 12px;
+  line-height: 18px;
+}
+.mycar .car-goods dl dd .number {
+  width: 120px;
+  text-align: center;
+}
+.mycar .car-goods dl dd .number .jisuan {
+  width: 80px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1;
+  font-size: 14px;
+  color: #999;
+}
+.num1{
+  width: 40px;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid #dcdfe6;
+  text-align: center;
+}
+.mycar .car-goods dl dd .number .jisuan .input-jian {
+  height: 20px;
+  line-height: 20px;
+  width: 20px;
+  font-size: 12px;
+  right: 1px;
+  border: 1px solid #dcdfe6;
+  float: left;
+}
+.mycar .car-goods dl dd .number .jisuan .input-jia {
+  height: 20px;
+  line-height: 20px;
+  width: 20px;
+  font-size: 12px;
+  right: 1px;
+  border: 1px solid #dcdfe6;
+  float: right;
+}
+.mycar .car-goods dl dd .number .jisuan .input {
+  height: 20px;
+  line-height: 20px;
+  width: 40px;
+  font-size: 12px;
+  float: left;
+}
+.mycar .car-goods dl dd .number .jisuan .input input {
+  height: 20px;
+  width: 40px;
+  background-color: #fff;
+  background-image: none;
+  border-radius: 2px;
+  border: 1px solid #dcdfe6;
+  box-sizing: border-box;
+  color: #606266;
+  display: inline-block;
+  font-size: inherit;
+  outline: none;
+  text-align: center;
+}
+.mycar .car-goods dl dd .amount {
+  color: #ea4148;
+  width: 120px;
+  text-align: center;
+}
+.mycar .car-goods dl dd .action {
+  display: block;
+  position: absolute;
+  right: 40px;
+  top: 17%;
+  width: 110px;
+  text-align: center;
+  font-size: 14px;
+}
+.mycar .settlement {
+  background: #fff;
+  padding: 20px 0 20px 30px;
+  position: relative;
+  height: 60px;
+  z-index: 2;
+  width: 1200px;
+  margin: 0 auto;
+}
+.mycar .settlement .settlement-left {
+  vertical-align: top;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+.mycar .settlement .settlement-left i {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #999;
+  border-radius: 16px;
+  margin: 0 4px 0 10px;
+}
+.mycar .settlement .settlement-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 700px;
+  height: 60px;
+  font-size: 0;
+  text-align: right;
+}
+.mycar .settlement .settlement-right .neirong {
+  display: inline-block;
+  vertical-align: top;
+  height: 60px;
+  font-size: 14px;
+  color: #999;
+  margin-right: 25px;
+  line-height: 1;
+}
+.mycar .settlement .settlement-right .neirong .heji {
+  display: block;
+  color: #333;
+  margin-bottom: 3px;
+  padding-top: 20px;
+}
+.mycar .settlement .settlement-right .neirong .heji .jiage {
+  font-size: 24px;
+  color: #ea4148;
+}
+.mycar .settlement .settlement-right .jiesuan {
+  cursor: pointer;
+  font-size: 18px;
+  width: 160px;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  line-height: 60px;
+  background: #ea4148;
+  color: #fff;
+}
+.more-father {
+  background-color: #efefef;
+}
+.more-nice {
+  margin-bottom: 50px;
+  width: 1200px;
+}
+.more-nice h3 {
+  font-size: 28px;
+  font-weight: 400;
+  color: #333;
+  padding: 20px 0 14px;
+  line-height: 1;
+}
+.more-nice .goods-list {
+  min-height: 410px;
+  font-size: 0;
+}
+.more-nice .goods-list .goods li:nth-child(4n) {
+  margin-right: 0;
+  padding-right: 0;
+}
+.more-nice .goods-list .goods li {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  width: 291px;
+  margin: 0 12px 12px 0;
+}
+.more-nice .goods-list .goods li .goods-item {
+  font-size: 14px;
+  color: #999;
+  line-height: 1;
+  background: #fff;
+  padding: 0 0 20px;
+  cursor: pointer;
+}
+.more-nice .goods-list .goods li .goods-item .img-warp {
+  margin: 0 auto 8px;
+  width: 291px;
+  height: 291px;
+  text-align: center;
+  position: relative;
+}
+.more-nice .goods-list .goods li .goods-item .img-warp img {
+  vertical-align: top;
+  width: 291px;
+  height: 291px;
+}
+.more-nice .goods-list .goods li .goods-item .tags {
+  margin-left: 10px;
+  height: 20px;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.more-nice .goods-list .goods li .goods-item .tags span {
+  display: block;
+  padding: 0 5px;
+  margin-right: 10px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #f4a0a3;
+  float: left;
+}
+.more-nice .goods-list .goods li .goods-item .name {
+  margin-left: 10px;
+  font-size: 16px;
+  color: #333;
+  height: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.more-nice .goods-list .goods li .goods-item .desc {
+  margin-left: 10px;
+  font-size: 14px;
+  height: 14px;
+  margin-bottom: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.more-nice .goods-list .goods li .goods-item .price {
+  margin-left: 10px;
+  font-size: 18px;
+  color: #ea4148;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.wrap {
+  margin: 0 auto;
+  width: 1200px;
+  height: 100%;
+}
+.nav {
+  background: #333;
+  width: 100%;
+  height: 37px;
+}
+.nav_content {
+  display: flex;
+  justify-content: space-between;
+  line-height: 37px;
+  color: #ccc;
+  font-size: 12px;
+}
+.nav_content a {
+  color: #ccc;
+}
+.nav_content a:hover {
+  color: #fff;
+}
+.nav_content .left a {
+  padding: 0 6px;
+}
+.nav_content .right ul {
+  display: flex;
+}
+.nav_content .right ul li {
+  padding: 0 6px;
+}
+.nav_content .iconfont {
+  padding: 0 2px;
+  vertical-align: middle;
+}
+.nav_content .right_list > li:nth-child(2) {
+  position: relative;
+}
+.nav_content .right_list > li:nth-child(2) .xinxi {
+  position: absolute;
+  left: -22px;
+  top: 50px;
+  width: 120px;
+  display: none;
+  background-color: #fff;
+  border: 1px solid #ebeef5;
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+  z-index: 1;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+.nav_content .right_list > li:nth-child(2) span {
+  margin-left: 4px;
+  color: #ea4148;
+}
+.nav_content .right_list > li:nth-child(4) {
+  position: relative;
+}
+.nav_content .right_list > li:nth-child(4) .yuyan {
+  position: absolute;
+  left: -116px;
+  top: 50px;
+  padding-left: 10px;
+  width: 200px;
+  display: none;
+  background-color: #fff;
+  border: 1px solid #ebeef5;
+  color: #333;
+  font-size: 14px;
+  z-index: 1;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+/* 头部 */
+.header {
+  background-color: #fff;
+}
+.header_content {
+  display: flex;
+  justify-content: space-between;
+  height: 114px;
+}
+.header_content .logo {
+  margin: 35px 0 0;
+}
+.header_content .search {
+  display: flex;
+  position: relative;
+  margin-top: 37px;
+  width: 680px;
+  height: 36px;
+  border: 1px solid #ea4148;
+}
+.header_content .search input {
+  padding: 0 15px;
+  width: 600px;
+  height: 100%;
+  border: 1px solid #dcdfe6;
+  color: #606266;
+  outline: none;
+}
+.header_content .search input::placeholder {
+  color: #ccc;
+}
+.header_content .search button {
+  width: 78px;
+  height: 34px;
+  border-radius: 0 2px 2px 0;
+  border: none;
+  color: #fff;
+  background-color: #ea4148;
+  overflow: hidden;
+}
+.header_content .search ul {
+  width: 601px;
+  position: absolute;
+  left: -1px;
+  top: 34px;
+  border: 1px solid #ea4148;
+  display: none;
+  font-size: 12px;
+}
+.header_content .search li {
+  padding: 6px 0 6px 8px;
+}
+.header_content .search li:first-child {
+  color: #999;
+  border-bottom: 1px solid #ccc;
+}
+/* 尾部 */
+.footer {
+  background-color: #fff;
+  margin-top: 200px;
+}
+.foot_main {
+  background-color: #fff;
+  height: 332px;
+}
+.foot_main .bottom {
+  margin: 30px 0 30px 30px;
+}
+.foot_main .bottom .left {
+  float: left;
+  width: 870px;
+  border-right: 1px solid #ccc;
+}
+.foot_main .bottom dl {
+  float: left;
+  margin-right: 100px;
+  font-size: 12px;
+}
+.foot_main .bottom dl dt {
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+.foot_main .bottom dl:last-child {
+  margin-right: 0;
+}
+.foot_main .bottom dl dd {
+  color: #333;
+  margin-bottom: 10px;
+}
+.foot_main .bottom .right {
+  float: right;
+  width: 290px;
+  text-align: center;
+  margin-top: 10px;
+}
+.foot_main .bottom .right p:nth-of-type(1) {
+  font-size: 22px;
+  color: #f18d00;
+}
+.foot_main .bottom .right p:nth-of-type(1) span {
+  display: inline-table;
+  margin-left: 6px;
+  padding: 2px 5px;
+  font-size: 14px;
+  border: 1px solid #f18d00;
+  vertical-align: top;
+}
+.foot_main .bottom .right p:nth-of-type(2) {
+  font-size: 12px;
+  color: #999;
+}
+.footer_icp {
+  padding: 10px 0;
+  background-color: #efefef;
+  text-align: center;
+}
+.footer_icp p {
+  margin-bottom: 4px;
+  font-size: 12px;
+  color: #999;
+}
+.footer_icp p:nth-child(2) img {
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+
+
+
+
+
+.mycar .car-goods dl dd .click-wrapper .active{
+  border:  0;
+  background-image: url(../img/check.1ea2756.png);
+  background-size: cover
+}
+
+
+
+.mycar .settlement .settlement-left .current{
+  border:  0 ;
+  background-image: url(../img/check.1ea2756.png);
+  background-size: cover
+}

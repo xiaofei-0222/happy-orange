@@ -1,0 +1,51 @@
+{
+  "id": "4016093",
+  "name": "阿巴阿巴",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1306",
+      "name": "购物车空",
+      "font_class": "gouwuchekong",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "82756",
+      "name": "回到顶部",
+      "font_class": "huidaodingbu",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "577336",
+      "name": "反馈",
+      "font_class": "fankui",
+      "unicode": "e738",
+      "unicode_decimal": 59192
+    },
+    {
+      "icon_id": "778500",
+      "name": "右箭头",
+      "font_class": "youjiantou",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "5387690",
+      "name": "地图_地球",
+      "font_class": "ditu_diqiu",
+      "unicode": "eb31",
+      "unicode_decimal": 60209
+    },
+    {
+      "icon_id": "5460560",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "ec2e",
+      "unicode_decimal": 60462
+    }
+  ]
+}

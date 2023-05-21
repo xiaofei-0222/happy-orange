@@ -1,0 +1,86 @@
+{
+  "id": "4016303",
+  "name": "乐橙项目",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "28333891",
+      "name": "待发货订单",
+      "font_class": "daifahuodingdan1",
+      "unicode": "e6cc",
+      "unicode_decimal": 59084
+    },
+    {
+      "icon_id": "19674553",
+      "name": "右箭头",
+      "font_class": "right-circle-fill",
+      "unicode": "eb22",
+      "unicode_decimal": 60194
+    },
+    {
+      "icon_id": "831197",
+      "name": "返回顶部",
+      "font_class": "icon",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    },
+    {
+      "icon_id": "947053",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "1287309",
+      "name": "图标_反馈",
+      "font_class": "tubiao_fankui",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "2076220",
+      "name": " 下拉箭头小",
+      "font_class": "xialajiantouxiao",
+      "unicode": "e87e",
+      "unicode_decimal": 59518
+    },
+    {
+      "icon_id": "2076258",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e88f",
+      "unicode_decimal": 59535
+    },
+    {
+      "icon_id": "3890393",
+      "name": "待付款订单",
+      "font_class": "daifukuandingdan",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "5387690",
+      "name": "地图_地球",
+      "font_class": "ditu_diqiu",
+      "unicode": "eb31",
+      "unicode_decimal": 60209
+    },
+    {
+      "icon_id": "7291078",
+      "name": "评价",
+      "font_class": "pingjia",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "15077426",
+      "name": "待收货",
+      "font_class": "daishouhuo",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    }
+  ]
+}
